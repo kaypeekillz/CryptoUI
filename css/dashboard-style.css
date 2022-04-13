@@ -41,6 +41,11 @@ a, p, h1, h2, h3, h4, h5, h6, span, input, label, button, li, th, td {
     cursor: pointer;
 }
 
+.card {
+    box-shadow: 0px 1px 16px rgba(27, 39, 51, 0.08) !important;
+    border: none !important;
+}
+
 *::-webkit-scrollbar {
 	width: 8px;
     /* height: 0px;  */
@@ -112,9 +117,9 @@ img.top-pattern {
 
 .page-content {
     overflow-y: auto;
-    min-height: 100vh;
+    min-height: auto;
     background-color: #FFFFFF;
-    padding: 1rem;
+    padding: 3rem;
 }
 
 .main-nav {
@@ -355,7 +360,7 @@ thead {
     padding: 10px;
     width: 100%;
     border-radius: 5px;
-    border: 1px solid #F0F1F3;
+    border: 1px solid #E3E3E3;
     background-color: #F8F7FF;
     outline: none;
 }
@@ -386,7 +391,7 @@ thead {
     width: 100% !important;
     color: black;
     border-radius: 5px;
-    border: 1px solid #F0F1F3;
+    border: 2px solid #E3E3E3;
     background-color: #F8F7FF;
     outline: none;
 }
@@ -396,13 +401,34 @@ thead {
     width: 100% !important;
     color: black;
     border-radius: 5px;
-    border: 1px solid #F0F1F3;
+    border: 1px solid #E3E3E3;
     background-color: #F8F7FF;
+    outline: none;
+}
+
+.contact-input-field {
+    padding: 10px;
+    width: 100% !important;
+    color: black;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: white;
     outline: none;
 }
 
 .ppl-cl {
     color: #352E5B;
+}
+
+.transfer-btn-trans {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid  #8568C6;
+    outline: none !important;
+    color:  #8568C6;
+    background-color: white
 }
 
 .transfer-btn {
@@ -417,6 +443,10 @@ thead {
 }
 
 .transfer-btn:focus {
+    outline: none;
+}
+
+.transfer-btn-trans:focus {
     outline: none;
 }
 
@@ -514,7 +544,11 @@ thead {
 .nav-item {
     width: 50%;
     text-align: center;
-    
+}
+
+.nav-item-2 {
+    width: 25%;
+    text-align: center; 
 }
 
 .nav-link.active {
@@ -535,6 +569,22 @@ thead {
     background-color: #EAEAEE;
     color: #4612A3 !important;
     border: none !important;
+}
+
+.nav-link-2 {
+    /* background-color: #A5A2B8; */
+    color: #A5A2B8 !important;
+    border: none !important;
+    margin-bottom: 10px !important;
+    text-decoration: none !important;
+    padding-bottom: 10px;
+}
+
+.nav-link-2.active {
+    /* background-color: #F8F7FF !important; */
+    border-bottom: 2px solid #4612A3 !important;
+    color: #4612A3 !important;
+    /* border-bottom-width: 100px !important; */
 }
 
 .tab-content {
@@ -592,9 +642,152 @@ thead {
     text-decoration: none;
 }
 
+.contact-left {
+    padding: 3rem !important;
+}
+
+.contact-right {
+    background-color: white;
+    padding: 3rem !important;
+    box-shadow: 0px 1px 10px rgba(27, 39, 51, 0.08);
+    border-radius: 5px;
+}
+
+.user-main-content {
+    background-color: #F8F7FF;
+    padding: 2rem;
+}
+
+.no-pl-4 {
+    padding-left: 2rem;
+}
+
+.tab-set {
+    border: none !important;
+}
+
+.set-tab-content {
+    border-top: 2px solid #dee2e6;
+    margin-top: 10px;
+    padding: 2rem 0px 0px 0px;
+}
+
+.check-bvn {
+    margin-bottom: 0px;
+}
+
+.verify-col {
+    margin-top: 6rem;
+}
+
+
+/* TOGGLE BUTTON ON SETTINGS PAGE STYLE */
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #8568C6;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #8568C6;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+/* TOGGLE BUTTON ON SETTINGS END HERE */
+
+
+
+.nav-toper {
+    background-color: white !important;
+    padding: 5px 5px 3px 10px !important;
+    box-shadow: 0px 1px 16px rgba(27, 39, 51, 0.08) !important;
+}
+
+.nav-toper-item-btn {
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    padding: 5px;
+}
+
+.nav-toper-item-btn.active {
+    color: white !important;
+    text-align: center;
+    cursor: pointer;
+    background-color: #8568C6 !important;
+    width: 100%;
+    padding: 5px;
+    border: none !important;
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+}
+
+
 @media screen and (max-width: 767px) {
     *::-webkit-scrollbar {
         width: 0px !important;
+    }
+
+    .page-content {
+        padding: 1rem !important;
     }
 
     .sidenav {
@@ -682,6 +875,10 @@ thead {
         text-align: left ;
         font-weight: 700;
 	}
+
+    .display-block-mobile {
+        display: block !important;
+    }
 	
 	/*
 	Label the data
@@ -788,6 +985,40 @@ thead {
         padding: 5px !important;
     }
 
+    .contact-left {
+        padding: 1rem !important;
+    }
+
+    .contact-img {
+        height: 200px !important;
+    }
+
+    .contact-right {
+        padding: 2rem !important;
+        margin: 1rem 0rem 1rem 1rem !important;
+    }
+
+    .user-main-content {
+        padding: 1rem !important;
+    }
+
+    .no-pl-4 {
+        padding-left: 0px !important;
+    }
+
+    .nav-item-2 {
+        width: 100% !important;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .check-bvn {
+        margin-bottom: 20px;
+    }
+
+    .verify-col {
+        margin-top: 0px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -795,6 +1026,10 @@ thead {
         width: 0px !important;
     }
 
+    .page-content {
+        padding: 1rem !important;
+    }
+
     .card-value {
         font-size: 20px;
     }
@@ -919,6 +1154,15 @@ thead {
     .network {
         padding: 5px !important;
     }
+
+    .contact-img {
+        height: 200px !important;
+    }
+
+    .display-flex-tabs {
+        display: flex !important;
+    }
+    
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1365px) {
@@ -926,6 +1170,10 @@ thead {
         width: 0px !important;
     }
 
+    .page-content {
+        padding: 1rem !important;
+    }
+
     .card-value {
         font-size: 20px;
     }
@@ -1050,4 +1298,13 @@ thead {
     .network {
         padding: 5px !important;
     }
+
+    .contact-img {
+        height: 200px !important;
+    }
+
+    .display-flex-tabs {
+        display: flex;
+    }
+    
 }
