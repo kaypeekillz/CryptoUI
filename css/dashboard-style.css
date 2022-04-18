@@ -217,6 +217,10 @@ img.top-pattern {
     color: #E3507A;
 }
 
+.color-red {
+    color: #E9001C;
+}
+
 .color-green {
     color: #2BB596;
 }
@@ -416,6 +420,16 @@ thead {
     outline: none;
 }
 
+.customer-input-field {
+    padding: 10px;
+    width: 100% !important;
+    color: black;
+    border-radius: 5px;
+    border: 2px solid #8568C6;
+    background-color: white;
+    outline: none;
+}
+
 .ppl-cl {
     color: #352E5B;
 }
@@ -429,6 +443,15 @@ thead {
     outline: none !important;
     color:  #8568C6;
     background-color: white
+}
+
+.transfer-btn-small {
+    width: auto;
+    border-radius: 5px;
+    border: none;
+    outline: none !important;
+    color: white;
+    background-color: #8568C6;
 }
 
 .transfer-btn {
@@ -544,6 +567,11 @@ thead {
 .nav-item {
     width: 50%;
     text-align: center;
+}
+
+.nav-item-3 {
+    width: 50%;
+    text-align: center; 
 }
 
 .nav-item-2 {
@@ -780,6 +808,109 @@ thead {
     border-bottom-right-radius: 5px !important;
 }
 
+.remove-btn {
+    background-color: #DADADA;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+}
+
+.remove-btn:focus {
+    outline: none !important;
+    border: none !important;
+}
+
+.width-10 {
+    width: 10%;
+}
+
+.width-30 {
+    width: 30%;
+}
+
+.width-45 {
+    width: 45%;
+}
+
+.width-20 {
+    width: 20%;
+}
+
+.width-5 {
+    width: 5%;
+}
+
+.width-15 {
+    width: 15%;
+}
+
+.width-60 {
+    width: 60%;
+}
+
+.each-table-row {
+    border-bottom: 1px solid #E3E3E3;
+}
+
+.chart-section {
+    width: 100%;
+    height: 500px;
+    background-color: #F8F7FF;
+    border-radius: 5px;
+}
+
+.each-stat {
+    border-radius: 5px;
+    background-color: #8568C6;
+    padding: 1rem;
+}
+
+.notify-admin {
+    background-color: #F8F7FF;
+    padding: 3rem;
+}
+
+.customer-details-section {
+    padding: 3rem !important;
+}
+
+.has-bottom-border {
+    border-bottom: 1px solid #E3E3E3;
+}
+
+.cust-det {
+    border: 1px solid #8568C6;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.ft-600 {
+    font-weight: 600;
+}
+
+.trans-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.trans-ancor:hover {
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.trans-item-p:hover {
+    color: black;
+    text-decoration: none !important;
+}
+
+.trans-item-p {
+    color: black;
+    text-decoration: none;
+}
 
 @media screen and (max-width: 767px) {
     *::-webkit-scrollbar {
@@ -894,6 +1025,239 @@ thead {
 	td:nth-of-type(3):before { content: "Amount"; }
 	td:nth-of-type(4):before { content: "Status"; }
 	td:nth-of-type(5):before { content: "Date"; }
+
+    .live-trans-tran:nth-of-type(1):before { content: "Transaction ID"; }
+	.live-trans-date:nth-of-type(2):before { content: "Date"; }
+	.live-trans-name:nth-of-type(3):before { content: "Name"; }
+	.live-trans-type:nth-of-type(4):before { content: "Type"; }
+	.live-trans-amount:nth-of-type(5):before { content: "Amount"; }
+	.live-trans-status:nth-of-type(6):before { content: "Status"; }
+
+    .item-useremail:nth-of-type(1):before { 
+        content: "User Email";
+        color: black !important;
+    }
+	.item-type:nth-of-type(2):before { 
+        content: "Type";
+        color: black !important;
+    }
+	.item-datecreated:nth-of-type(3):before { 
+        content: "Date Created";
+        color: black !important;
+    }
+	.item-dateconfirmed:nth-of-type(4):before { 
+        content: "Date Confirmed"; 
+        color: black !important;
+    }
+	.item-status:nth-of-type(5):before { 
+        content: "Status";
+        color: black !important;
+     }
+	.item-refcode:nth-of-type(6):before { 
+        content: "Ref Code"; 
+        color: black !important;
+    }
+	.item-action:nth-of-type(7):before { 
+        content: "Action"; 
+        color: black !important;
+    }
+
+
+    .item-useremail-5:nth-of-type(1):before { 
+        content: "User Email";
+        color: black !important;
+    }
+	.item-amount-5:nth-of-type(2):before { 
+        content: "Amount(Naira)";
+        color: black !important;
+    }
+	.item-status-5:nth-of-type(3):before { 
+        content: "Status";
+        color: black !important;
+    }
+	.item-dateflag-5:nth-of-type(4):before { 
+        content: "Date Flagged"; 
+        color: black !important;
+    }
+	.item-flagger-5:nth-of-type(5):before { 
+        content: "Flagging Agent";
+        color: black !important;
+     }
+	.item-unflagger-5:nth-of-type(6):before { 
+        content: "Unflagging Agent"; 
+        color: black !important;
+    }
+	.item-date-unflag-5:nth-of-type(7):before { 
+        content: "Date"; 
+        color: black !important;
+    }
+
+    .item-date-action-5:nth-of-type(7):before { 
+        content: "Action"; 
+        color: black !important;
+    }
+
+
+    .item-useremail-2:nth-of-type(1):before { 
+        content: "User Email";
+        color: black !important;
+    }
+	.item-type-2:nth-of-type(2):before { 
+        content: "Type";
+        color: black !important;
+    }
+    .item-usernumber-2:nth-of-type(3):before { 
+        content: "Crypto to USD";
+        color: black !important;
+    }
+    .item-billamount-2:nth-of-type(4):before { 
+        content: "Crtpto Amount";
+        color: black !important;
+    }
+    .item-wallet-2:nth-of-type(5):before { 
+        content: "Naira Amount";
+        color: black !important;
+    }
+	.item-datecreated-2:nth-of-type(6):before { 
+        content: "Date Created";
+        color: black !important;
+    }
+	.item-dateconfirmed-2:nth-of-type(7):before { 
+        content: "Date Confirmed"; 
+        color: black !important;
+    }
+	.item-status-2:nth-of-type(8):before { 
+        content: "Status";
+        color: black !important;
+     }
+	.item-refcode-2:nth-of-type(9):before { 
+        content: "Ref Code"; 
+        color: black !important;
+    }
+	.item-action-2:nth-of-type(10):before { 
+        content: "Action"; 
+        color: black !important;
+    }
+
+
+    .item-useremail-4:nth-of-type(1):before { 
+        content: "User Email";
+        color: black !important;
+    }
+	.item-type-4:nth-of-type(2):before { 
+        content: "Type";
+        color: black !important;
+    }
+    .item-usernumber-4:nth-of-type(3):before { 
+        content: "Account Number";
+        color: black !important;
+    }
+    .item-sendername-4:nth-of-type(4):before { 
+        content: "Account Name";
+        color: black !important;
+    }
+    .item-bankname-4:nth-of-type(5):before { 
+        content: "Bank Name";
+        color: black !important;
+    }
+    .item-amount-4:nth-of-type(6):before { 
+        content: " Amount";
+        color: black !important;
+    }
+	.item-datecreated-4:nth-of-type(7):before { 
+        content: "Date Created";
+        color: black !important;
+    }
+	.item-dateconfirmed-4:nth-of-type(8):before { 
+        content: "Date Confirmed"; 
+        color: black !important;
+    }
+	.item-status-4:nth-of-type(9):before { 
+        content: "Status";
+        color: black !important;
+     }
+	.item-refcode-4:nth-of-type(10):before { 
+        content: "Ref Code"; 
+        color: black !important;
+    }
+	.item-action-4:nth-of-type(11):before { 
+        content: "Action"; 
+        color: black !important;
+    }
+
+    .item-useremail-3:nth-of-type(1):before { 
+        content: "User Email";
+        color: black !important;
+    }
+	.item-type-3:nth-of-type(2):before { 
+        content: "Type";
+        color: black !important;
+    }
+    .item-amount-3:nth-of-type(3):before { 
+        content: "Amount";
+        color: black !important;
+    }
+	.item-datecreated-3:nth-of-type(4):before { 
+        content: "Date Created";
+        color: black !important;
+    }
+	.item-dateconfirmed-3:nth-of-type(5):before { 
+        content: "Date Confirmed"; 
+        color: black !important;
+    }
+	.item-status-3:nth-of-type(6):before { 
+        content: "Status";
+        color: black !important;
+     }
+	.item-refcode-3:nth-of-type(7):before { 
+        content: "Ref Code"; 
+        color: black !important;
+    }
+	.item-action-3:nth-of-type(8):before { 
+        content: "Action"; 
+        color: black !important;
+    }
+
+    .item-useremail-1:nth-of-type(1):before { 
+        content: "User Email";
+        color: black !important;
+    }
+	.item-type-1:nth-of-type(2):before { 
+        content: "Type";
+        color: black !important;
+    }
+    .item-usernumber-1:nth-of-type(3):before { 
+        content: "User Number";
+        color: black !important;
+    }
+    .item-billamount-1:nth-of-type(4):before { 
+        content: "Bill Payment";
+        color: black !important;
+    }
+    .item-wallet-1:nth-of-type(5):before { 
+        content: "Wallet";
+        color: black !important;
+    }
+	.item-datecreated-1:nth-of-type(6):before { 
+        content: "Date Created";
+        color: black !important;
+    }
+	.item-dateconfirmed-1:nth-of-type(7):before { 
+        content: "Date Confirmed"; 
+        color: black !important;
+    }
+	.item-status-1:nth-of-type(8):before { 
+        content: "Status";
+        color: black !important;
+     }
+	.item-refcode-1:nth-of-type(9):before { 
+        content: "Ref Code"; 
+        color: black !important;
+    }
+	.item-action-1:nth-of-type(10):before { 
+        content: "Action"; 
+        color: black !important;
+    }
 
     th { 
         padding: 6px; 
@@ -1012,12 +1376,39 @@ thead {
         text-align: left;
     }
 
+    .nav-item-3 {
+        width: 100% !important;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
     .check-bvn {
         margin-bottom: 20px;
     }
 
     .verify-col {
         margin-top: 0px;
+    }
+
+    .each-user-card{
+        display: block !important;
+    }
+
+    .tag-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .admin-table-head {
+        display: none;
+    }
+
+    .admin-table-head-line {
+        display: none;
+    }
+
+    .customer-details-section {
+        padding: 1rem !important;
     }
 }
 
@@ -1080,11 +1471,250 @@ thead {
 	/*
 	Label the data
 	*/
+    .asset-item-1:nth-of-type(1):before { content: "Assets"; }
+    .asset-item-2:nth-of-type(2):before { content: "Total"; }
+	.asset-item-3:nth-of-type(3):before { content: "Rate"; }
+	.asset-item-4:nth-of-type(4):before { content: "Send"; }
+	.asset-item-5:nth-of-type(5):before { content: "Recieve"; }
+
 	td:nth-of-type(1):before { content: "Transaction"; }
 	td:nth-of-type(2):before { content: "Total"; }
 	td:nth-of-type(3):before { content: "Amount"; }
 	td:nth-of-type(4):before { content: "Status"; }
 	td:nth-of-type(5):before { content: "Date"; }
+
+    .live-trans-tran:nth-of-type(1):before { content: "Transaction ID"; }
+	.live-trans-date:nth-of-type(2):before { content: "Date"; }
+	.live-trans-name:nth-of-type(3):before { content: "Name"; }
+	.live-trans-type:nth-of-type(4):before { content: "Type"; }
+	.live-trans-amount:nth-of-type(5):before { content: "Amount"; }
+	.live-trans-status:nth-of-type(6):before { content: "Status"; }
+
+    .item-useremail-1:nth-of-type(1):before { 
+        content: "User Email";
+        color: black !important;
+    }
+	.item-type-1:nth-of-type(2):before { 
+        content: "Type";
+        color: black !important;
+    }
+    .item-usernumber-1:nth-of-type(3):before { 
+        content: "User Number";
+        color: black !important;
+    }
+    .item-billamount-1:nth-of-type(4):before { 
+        content: "Bill Payment";
+        color: black !important;
+    }
+    .item-wallet-1:nth-of-type(5):before { 
+        content: "Wallet";
+        color: black !important;
+    }
+	.item-datecreated-1:nth-of-type(6):before { 
+        content: "Date Created";
+        color: black !important;
+    }
+	.item-dateconfirmed-1:nth-of-type(7):before { 
+        content: "Date Confirmed"; 
+        color: black !important;
+    }
+	.item-status-1:nth-of-type(8):before { 
+        content: "Status";
+        color: black !important;
+     }
+	.item-refcode-1:nth-of-type(9):before { 
+        content: "Ref Code"; 
+        color: black !important;
+    }
+	.item-action-1:nth-of-type(10):before { 
+        content: "Action"; 
+        color: black !important;
+    }
+
+    .item-useremail:nth-of-type(1):before { 
+        content: "User Email";
+        color: black !important;
+    }
+	.item-type:nth-of-type(2):before { 
+        content: "Type";
+        color: black !important;
+    }
+	.item-datecreated:nth-of-type(3):before { 
+        content: "Date Created";
+        color: black !important;
+    }
+	.item-dateconfirmed:nth-of-type(4):before { 
+        content: "Date Confirmed"; 
+        color: black !important;
+    }
+	.item-status:nth-of-type(5):before { 
+        content: "Status";
+        color: black !important;
+     }
+	.item-refcode:nth-of-type(6):before { 
+        content: "Ref Code"; 
+        color: black !important;
+    }
+	.item-action:nth-of-type(7):before { 
+        content: "Action"; 
+        color: black !important;
+    }
+
+    .item-useremail-2:nth-of-type(1):before { 
+        content: "User Email";
+        color: black !important;
+    }
+	.item-type-2:nth-of-type(2):before { 
+        content: "Type";
+        color: black !important;
+    }
+    .item-usernumber-2:nth-of-type(3):before { 
+        content: "Crypto to USD";
+        color: black !important;
+    }
+    .item-billamount-2:nth-of-type(4):before { 
+        content: "Crtpto Amount";
+        color: black !important;
+    }
+    .item-wallet-2:nth-of-type(5):before { 
+        content: "Naira Amount";
+        color: black !important;
+    }
+	.item-datecreated-2:nth-of-type(6):before { 
+        content: "Date Created";
+        color: black !important;
+    }
+	.item-dateconfirmed-2:nth-of-type(7):before { 
+        content: "Date Confirmed"; 
+        color: black !important;
+    }
+	.item-status-2:nth-of-type(8):before { 
+        content: "Status";
+        color: black !important;
+     }
+	.item-refcode-2:nth-of-type(9):before { 
+        content: "Ref Code"; 
+        color: black !important;
+    }
+	.item-action-2:nth-of-type(10):before { 
+        content: "Action"; 
+        color: black !important;
+    }
+
+    .item-useremail-4:nth-of-type(1):before { 
+        content: "User Email";
+        color: black !important;
+    }
+	.item-type-4:nth-of-type(2):before { 
+        content: "Type";
+        color: black !important;
+    }
+    .item-usernumber-4:nth-of-type(3):before { 
+        content: "Account Number";
+        color: black !important;
+    }
+    .item-sendername-4:nth-of-type(4):before { 
+        content: "Account Name";
+        color: black !important;
+    }
+    .item-bankname-4:nth-of-type(5):before { 
+        content: "Bank Name";
+        color: black !important;
+    }
+    .item-amount-4:nth-of-type(6):before { 
+        content: " Amount";
+        color: black !important;
+    }
+	.item-datecreated-4:nth-of-type(7):before { 
+        content: "Date Created";
+        color: black !important;
+    }
+	.item-dateconfirmed-4:nth-of-type(8):before { 
+        content: "Date Confirmed"; 
+        color: black !important;
+    }
+	.item-status-4:nth-of-type(9):before { 
+        content: "Status";
+        color: black !important;
+     }
+	.item-refcode-4:nth-of-type(10):before { 
+        content: "Ref Code"; 
+        color: black !important;
+    }
+	.item-action-4:nth-of-type(11):before { 
+        content: "Action"; 
+        color: black !important;
+    }
+
+
+    .item-useremail-5:nth-of-type(1):before { 
+        content: "User Email";
+        color: black !important;
+    }
+	.item-amount-5:nth-of-type(2):before { 
+        content: "Amount(Naira)";
+        color: black !important;
+    }
+	.item-status-5:nth-of-type(3):before { 
+        content: "Status";
+        color: black !important;
+    }
+	.item-dateflag-5:nth-of-type(4):before { 
+        content: "Date Flagged"; 
+        color: black !important;
+    }
+	.item-flagger-5:nth-of-type(5):before { 
+        content: "Flagging Agent";
+        color: black !important;
+     }
+	.item-unflagger-5:nth-of-type(6):before { 
+        content: "Unflagging Agent"; 
+        color: black !important;
+    }
+	.item-date-unflag-5:nth-of-type(7):before { 
+        content: "Date"; 
+        color: black !important;
+    }
+
+    .item-date-action-5:nth-of-type(7):before { 
+        content: "Action"; 
+        color: black !important;
+    }
+
+
+    .item-useremail-3:nth-of-type(1):before { 
+        content: "User Email";
+        color: black !important;
+    }
+	.item-type-3:nth-of-type(2):before { 
+        content: "Type";
+        color: black !important;
+    }
+    .item-amount-3:nth-of-type(3):before { 
+        content: "Amount";
+        color: black !important;
+    }
+	.item-datecreated-3:nth-of-type(4):before { 
+        content: "Date Created";
+        color: black !important;
+    }
+	.item-dateconfirmed-3:nth-of-type(5):before { 
+        content: "Date Confirmed"; 
+        color: black !important;
+    }
+	.item-status-3:nth-of-type(6):before { 
+        content: "Status";
+        color: black !important;
+     }
+	.item-refcode-3:nth-of-type(7):before { 
+        content: "Ref Code"; 
+        color: black !important;
+    }
+	.item-action-3:nth-of-type(8):before { 
+        content: "Action"; 
+        color: black !important;
+    }
+    
 
     th { 
         padding: 6px; 
@@ -1163,6 +1793,23 @@ thead {
         display: flex !important;
     }
     
+    .admin-table-head {
+        display: none !important;
+    }
+
+    .admin-table-head-line {
+        display: none !important;
+    }
+
+    .admin-table-head-line-2 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .customer-details-section {
+        padding: 1rem !important;
+    }
+    
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1365px) {
@@ -1224,11 +1871,250 @@ thead {
 	/*
 	Label the data
 	*/
+    .asset-item-1:nth-of-type(1):before { content: "Assets"; }
+    .asset-item-2:nth-of-type(2):before { content: "Total"; }
+	.asset-item-3:nth-of-type(3):before { content: "Rate"; }
+	.asset-item-4:nth-of-type(4):before { content: "Send"; }
+	.asset-item-5:nth-of-type(5):before { content: "Recieve"; }
+
 	td:nth-of-type(1):before { content: "Transaction"; }
 	td:nth-of-type(2):before { content: "Total"; }
 	td:nth-of-type(3):before { content: "Amount"; }
 	td:nth-of-type(4):before { content: "Status"; }
 	td:nth-of-type(5):before { content: "Date"; }
+
+    .live-trans-tran:nth-of-type(1):before { content: "Transaction ID"; }
+	.live-trans-date:nth-of-type(2):before { content: "Date"; }
+	.live-trans-name:nth-of-type(3):before { content: "Name"; }
+	.live-trans-type:nth-of-type(4):before { content: "Type"; }
+	.live-trans-amount:nth-of-type(5):before { content: "Amount"; }
+	.live-trans-status:nth-of-type(6):before { content: "Status"; }
+
+    .item-useremail-1:nth-of-type(1):before { 
+        content: "User Email";
+        color: black !important;
+    }
+	.item-type-1:nth-of-type(2):before { 
+        content: "Type";
+        color: black !important;
+    }
+    .item-usernumber-1:nth-of-type(3):before { 
+        content: "User Number";
+        color: black !important;
+    }
+    .item-billamount-1:nth-of-type(4):before { 
+        content: "Bill Payment";
+        color: black !important;
+    }
+    .item-wallet-1:nth-of-type(5):before { 
+        content: "Wallet";
+        color: black !important;
+    }
+	.item-datecreated-1:nth-of-type(6):before { 
+        content: "Date Created";
+        color: black !important;
+    }
+	.item-dateconfirmed-1:nth-of-type(7):before { 
+        content: "Date Confirmed"; 
+        color: black !important;
+    }
+	.item-status-1:nth-of-type(8):before { 
+        content: "Status";
+        color: black !important;
+     }
+	.item-refcode-1:nth-of-type(9):before { 
+        content: "Ref Code"; 
+        color: black !important;
+    }
+	.item-action-1:nth-of-type(10):before { 
+        content: "Action"; 
+        color: black !important;
+    }
+
+
+    .item-useremail-3:nth-of-type(1):before { 
+        content: "User Email";
+        color: black !important;
+    }
+	.item-type-3:nth-of-type(2):before { 
+        content: "Type";
+        color: black !important;
+    }
+    .item-amount-3:nth-of-type(3):before { 
+        content: "Amount";
+        color: black !important;
+    }
+	.item-datecreated-3:nth-of-type(4):before { 
+        content: "Date Created";
+        color: black !important;
+    }
+	.item-dateconfirmed-3:nth-of-type(5):before { 
+        content: "Date Confirmed"; 
+        color: black !important;
+    }
+	.item-status-3:nth-of-type(6):before { 
+        content: "Status";
+        color: black !important;
+     }
+	.item-refcode-3:nth-of-type(7):before { 
+        content: "Ref Code"; 
+        color: black !important;
+    }
+	.item-action-3:nth-of-type(8):before { 
+        content: "Action"; 
+        color: black !important;
+    }
+
+
+    .item-useremail-5:nth-of-type(1):before { 
+        content: "User Email";
+        color: black !important;
+    }
+	.item-amount-5:nth-of-type(2):before { 
+        content: "Amount(Naira)";
+        color: black !important;
+    }
+	.item-status-5:nth-of-type(3):before { 
+        content: "Status";
+        color: black !important;
+    }
+	.item-dateflag-5:nth-of-type(4):before { 
+        content: "Date Flagged"; 
+        color: black !important;
+    }
+	.item-flagger-5:nth-of-type(5):before { 
+        content: "Flagging Agent";
+        color: black !important;
+     }
+	.item-unflagger-5:nth-of-type(6):before { 
+        content: "Unflagging Agent"; 
+        color: black !important;
+    }
+	.item-date-unflag-5:nth-of-type(7):before { 
+        content: "Date"; 
+        color: black !important;
+    }
+    .item-date-action-5:nth-of-type(8):before { 
+        content: "Action"; 
+        color: black !important;
+    }
+
+
+    .item-useremail:nth-of-type(1):before { 
+        content: "User Email";
+        color: black !important;
+    }
+	.item-type:nth-of-type(2):before { 
+        content: "Type";
+        color: black !important;
+    }
+	.item-datecreated:nth-of-type(3):before { 
+        content: "Date Created";
+        color: black !important;
+    }
+	.item-dateconfirmed:nth-of-type(4):before { 
+        content: "Date Confirmed"; 
+        color: black !important;
+    }
+	.item-status:nth-of-type(5):before { 
+        content: "Status";
+        color: black !important;
+     }
+	.item-refcode:nth-of-type(6):before { 
+        content: "Ref Code"; 
+        color: black !important;
+    }
+	.item-action:nth-of-type(7):before { 
+        content: "Action"; 
+        color: black !important;
+    }
+
+    .item-useremail-2:nth-of-type(1):before { 
+        content: "User Email";
+        color: black !important;
+    }
+	.item-type-2:nth-of-type(2):before { 
+        content: "Type";
+        color: black !important;
+    }
+    .item-usernumber-2:nth-of-type(3):before { 
+        content: "Crypto to USD";
+        color: black !important;
+    }
+    .item-billamount-2:nth-of-type(4):before { 
+        content: "Crtpto Amount";
+        color: black !important;
+    }
+    .item-wallet-2:nth-of-type(5):before { 
+        content: "Naira Amount";
+        color: black !important;
+    }
+	.item-datecreated-2:nth-of-type(6):before { 
+        content: "Date Created";
+        color: black !important;
+    }
+	.item-dateconfirmed-2:nth-of-type(7):before { 
+        content: "Date Confirmed"; 
+        color: black !important;
+    }
+	.item-status-2:nth-of-type(8):before { 
+        content: "Status";
+        color: black !important;
+     }
+	.item-refcode-2:nth-of-type(9):before { 
+        content: "Ref Code"; 
+        color: black !important;
+    }
+	.item-action-2:nth-of-type(10):before { 
+        content: "Action"; 
+        color: black !important;
+    }
+
+
+    .item-useremail-4:nth-of-type(1):before { 
+        content: "User Email";
+        color: black !important;
+    }
+	.item-type-4:nth-of-type(2):before { 
+        content: "Type";
+        color: black !important;
+    }
+    .item-usernumber-4:nth-of-type(3):before { 
+        content: "Account Number";
+        color: black !important;
+    }
+    .item-sendername-4:nth-of-type(4):before { 
+        content: "Account Name";
+        color: black !important;
+    }
+    .item-bankname-4:nth-of-type(5):before { 
+        content: "Bank Name";
+        color: black !important;
+    }
+    .item-amount-4:nth-of-type(6):before { 
+        content: " Amount";
+        color: black !important;
+    }
+	.item-datecreated-4:nth-of-type(7):before { 
+        content: "Date Created";
+        color: black !important;
+    }
+	.item-dateconfirmed-4:nth-of-type(8):before { 
+        content: "Date Confirmed"; 
+        color: black !important;
+    }
+	.item-status-4:nth-of-type(9):before { 
+        content: "Status";
+        color: black !important;
+     }
+	.item-refcode-4:nth-of-type(10):before { 
+        content: "Ref Code"; 
+        color: black !important;
+    }
+	.item-action-4:nth-of-type(11):before { 
+        content: "Action"; 
+        color: black !important;
+    }
 
     th { 
         padding: 6px; 
