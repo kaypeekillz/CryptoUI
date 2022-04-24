@@ -454,6 +454,17 @@ thead {
     background-color: #8568C6;
 }
 
+.transfer-btn-white {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #8568C6;
+    outline: none !important;
+    color: #8568C6;
+    background-color: white;
+}
+
 .transfer-btn {
     margin-top: 1rem;
     width: 100%;
@@ -463,6 +474,10 @@ thead {
     outline: none !important;
     color: white;
     background-color: #8568C6;
+}
+
+.transfer-btn-white:focus {
+    outline: none;
 }
 
 .transfer-btn:focus {
@@ -910,6 +925,29 @@ thead {
 .trans-item-p {
     color: black;
     text-decoration: none;
+}
+
+.show-hover {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+  
+.balance-main:hover .show-hover {
+    display: block;
+}
+
+.hover-btns {
+    padding: 5px 20px 5px 20px;
+    color: white;
+    width: 200px;
+    margin: 1px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 100px;
+}
+
+.hover-btns:focus {
+    outline: none;
 }
 
 @media screen and (max-width: 767px) {

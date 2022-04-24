@@ -100,19 +100,26 @@
                 </ul>
             </nav>
         
-            <div class="page">
+            <div class="page"> 
                 <nav class="navbar navbar-expand-md main-nav sticky-top">
                     <div class="container-fluid justify-content-between mx-md-3 py-2 pr-0">
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <div class="flex-container ml-auto flex-end navbar-nav">
-                                <div class="align-self-center d-flex">
-                                    <img src="../assets/images/notification btn.png" height="20" class="pointer mt-2"/> &nbsp; &nbsp;
-                                    <img src="../assets/images/Face.png" height="20" class="pointer mt-2"/> &nbsp; &nbsp; 
-                                    <h4 class="pointer name-text mt-2" style="color: #6F6C99;">
-                                        Angie Kem <img src="../assets/images/Down Arrow.jpg" height="7" width="10"/>
-                                    </h4> &nbsp;
-                                    
+                                <div>
+                                    <div class="align-self-center d-flex" role="button" id="dropdownMenuLinkApp" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="../assets/images/notification btn.png" height="20" class="pointer mt-2"/> &nbsp; &nbsp;
+                                        <img src="../assets/images/Face.png" height="20" class="pointer mt-2"/> &nbsp; &nbsp; 
+                                        <h4 class="pointer name-text mt-2" style="color: #6F6C99;">
+                                            Angie Kem <img src="../assets/images/Down Arrow.jpg" height="7" width="10"/>
+                                        </h4> &nbsp;
+                                    </div>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLinkApp">
+                                        <p class="pointer font-bold mb-0 text-center">
+                                            <img src="../assets/images/Log_Out.jpg"/> Log Out
+                                        </p>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -126,17 +133,30 @@
                         <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 left-section">
                             <div>
                                 <div class="horizontal-scroll">
-                                    <div class="grey-card-2">
-                                        <div class="d-flex justify-content-between">
-                                            <img src="../assets/images/bitcoin.png" height="20"/>
-                                            <div class="d-flex">
-                                                <img src="../assets/images/green-Shape.png" class="mt-2 mr-2" height="7"/>
-                                                <p class="color-green">+39.69%</p>
+                                    <div class="grey-card-2 balance-main">
+                                        <div class="">
+                                            <div class="d-flex justify-content-between">
+                                                <img src="../assets/images/bitcoin.png" height="20"/>
+                                                <div class="d-flex">
+                                                    <img src="../assets/images/green-Shape.png" class="mt-2 mr-2" height="7"/>
+                                                    <p class="color-green">+39.69%</p>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0 color-deep-grey">Balance</p>
+                                            <h3 class="color-yellow font-bold card-value">1.200 BTC</h3>
+                                            <p class="color-black">$ 1000.00</p>
+                                        </div>
+                                        <div class="show-hover">
+                                            <div class="d-flex justify-content-center">
+                                                <button class="hover-btns">Buy Bitcoin</button>
+                                            </div>
+                                            <div class="d-flex justify-content-center">
+                                                <button class="hover-btns">Sell Bitcoin</button>
+                                            </div>
+                                            <div class="d-flex justify-content-center">
+                                                <button class="hover-btns">Convert</button>
                                             </div>
                                         </div>
-                                        <p class="mb-0 color-deep-grey">Balance</p>
-                                        <h3 class="color-yellow font-bold card-value">1.200 BTC</h3>
-                                        <p class="color-black">$ 1000.00</p>
                                     </div>
         
                                     <div class="grey-card-2">

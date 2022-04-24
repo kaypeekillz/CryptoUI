@@ -90,14 +90,21 @@
                     <div class="container-fluid justify-content-between mx-md-3 py-2 pr-0">
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <div class="flex-container ml-auto flex-end navbar-nav">
-                                <div class="align-self-center d-flex">
-                                    <img src="../assets/images/notification btn.png" height="20" class="pointer mt-2"/> &nbsp; &nbsp;
-                                    <img src="../assets/images/Face.png" height="20" class="pointer mt-2"/> &nbsp; &nbsp; 
-                                    <h4 class="pointer name-text mt-2" style="color: #6F6C99;">
-                                        Angie Kem <img src="../assets/images/Down Arrow.jpg" height="7" width="10"/>
-                                    </h4> &nbsp;
-                                    
+                                <div>
+                                    <div class="align-self-center d-flex" role="button" id="dropdownMenuLinkApp" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="../assets/images/notification btn.png" height="20" class="pointer mt-2"/> &nbsp; &nbsp;
+                                        <img src="../assets/images/Face.png" height="20" class="pointer mt-2"/> &nbsp; &nbsp; 
+                                        <h4 class="pointer name-text mt-2" style="color: #6F6C99;">
+                                            Angie Kem <img src="../assets/images/Down Arrow.jpg" height="7" width="10"/>
+                                        </h4> &nbsp;
+                                    </div>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLinkApp">
+                                        <p class="pointer font-bold mb-0 text-center">
+                                            <img src="../assets/images/Log_Out.jpg"/> Log Out
+                                        </p>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -188,10 +195,25 @@
 
                         </div>
 
-                        <button class="transfer-btn mt-4" style="width: 180px;">New Message</button>
+                        <button data-toggle="modal" data-target="#newMsgModal" class="transfer-btn mt-4" style="width: 180px;">New Message</button>
                     </div>
                 </div>
             </div>
         </div>
     </body>
 </html>
+
+<!-- data-toggle="modal" data-target="#newMsgModal" -->
+<div class="modal fade" id="newMsgModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="card p-4">
+                <div>
+                    <p class="font-bold">Message</p>
+                    <input class="input-field" style="height: 200px; background-color: white;"/>
+                    <button class="transfer-btn mt-4" style="width: 180px;">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -105,14 +105,21 @@
                     <div class="container-fluid justify-content-between mx-md-3 py-2 pr-0">
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <div class="flex-container ml-auto flex-end navbar-nav">
-                                <div class="align-self-center d-flex">
-                                    <img src="../assets/images/notification btn.png" height="20" class="pointer mt-2"/> &nbsp; &nbsp;
-                                    <img src="../assets/images/Face.png" height="20" class="pointer mt-2"/> &nbsp; &nbsp; 
-                                    <h4 class="pointer name-text mt-2" style="color: #6F6C99;">
-                                        Angie Kem <img src="../assets/images/Down Arrow.jpg" height="7" width="10"/>
-                                    </h4> &nbsp;
-                                    
+                                <div>
+                                    <div class="align-self-center d-flex" role="button" id="dropdownMenuLinkApp" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="../assets/images/notification btn.png" height="20" class="pointer mt-2"/> &nbsp; &nbsp;
+                                        <img src="../assets/images/Face.png" height="20" class="pointer mt-2"/> &nbsp; &nbsp; 
+                                        <h4 class="pointer name-text mt-2" style="color: #6F6C99;">
+                                            Angie Kem <img src="../assets/images/Down Arrow.jpg" height="7" width="10"/>
+                                        </h4> &nbsp;
+                                    </div>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLinkApp">
+                                        <p class="pointer font-bold mb-0 text-center">
+                                            <img src="../assets/images/Log_Out.jpg"/> Log Out
+                                        </p>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -129,7 +136,7 @@
 
                         <div class="no-pl-4 display-flex justify-content-between display-block-mobile">
                             <img src="../assets/images/profile-pic.png"/>
-                            <button style="width: 100px; height: 50px;" class="mb-0 transfer-btn mt-5">Edit</button>
+                            <button data-toggle="modal" data-target="#editAcctModal" style="width: 100px; height: 50px;" class="mb-0 transfer-btn mt-5">Edit</button>
                         </div>
 
                         <hr/>
@@ -170,3 +177,35 @@
         </div>
     </body>
 </html>
+
+<div class="modal fade" id="editAcctModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="card p-4 mt-4">
+                <div class="d-flex">
+                    <p style="width: 30%;" class="mt-3">Full Name: </p>
+                    <input class="input-field"/>
+                </div>
+
+                <div class="d-flex mt-3">
+                    <p style="width: 30%;" class="mt-3">Userame: </p>
+                    <input class="input-field"/>
+                </div>
+
+                <div class="d-flex mt-3">
+                    <p style="width: 30%;" class="mt-3">Email Address: </p>
+                    <input class="input-field"/>
+                </div>
+
+                <div class="d-flex mt-3">
+                    <p style="width: 30%;" class="mt-3">Phone Number: </p>
+                    <input class="input-field"/>
+                </div>
+
+                <div class="d-flex justify-content-end mt-4">
+                    <button class="transfer-btn" style="width: 150px;">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -6,6 +6,8 @@
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
             integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
+            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
@@ -13,7 +15,7 @@
 
     </head>
     <body>  
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-lg fixed-top" style="background: rgba(0, 0, 0, 0.3) !important;">
             <a href="home.html">
               <img class="navbar-brand" alt="crypto-logo" width="130" height="35" src="assets/images/logo.png"/>
             </a>
@@ -25,14 +27,17 @@
           
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About Us <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Resources</a>
+                  <a class="nav-link" href="refill.html">Refill</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Products</a>
+                  <a class="nav-link" href="otc.html">OTC</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="create-ticket.html">Create a ticket</a>
                 </li>
               </ul>
               <ul class="navbar-nav ml-auto">
@@ -106,7 +111,7 @@
             </div>
             <div class="row">
               <div class="col-md-6 col-sm-12 col-lg-6 col-xs-12 section-two-lower">
-                <p class="trend-banner-txt">Buy and <br/> Sell Cryptocion <br/> Way to Trade</p>
+                <p class="banner-txt font-bold" style="color: black;">Buy and <br/> Sell Cryptocion <br/> Way to Trade</p>
                 <p class="trend-sub-head mt-4">
                   We like to think of ourselves as super heros here at Paricia. We <br/>
                   aren’t in the business of doing things because they are routine. <br/>
@@ -126,26 +131,26 @@
                 <div class="m-top display-flex checks-flex">
                   <div class="d-flex checks">
                     <img src="./assets/images/Check_All.jpg"/>
-                    <p class="pl-3 pt-3">No Middle Man</p>
+                    <p class="pl-3 pt-3">Easier International Exchange</p>
                   </div>
                   <div class="m-left d-flex checks">
                     <img src="./assets/images/Check_All.jpg"/>
-                    <p class="pl-3 pt-3">More Confidential</p>
+                    <p class="pl-3 pt-3">Seamless Crypto Transactions</p>
                   </div>
                 </div>
                 <div class="mt-5">
                   <a class="register-btn" href="register.html">Get Started Now</a>
                 </div>
               </div>
-              <div class="col-md-6 col-sm-12 col-lg-6 col-xs-12 mobile-img">
-                <img class="mobile-phone-img" src="./assets/images/mobilemobile.png" height="700"/>
+              <div class="col-md-6 col-sm-12 col-lg-6 col-xs-12 mobile-img d-flex justify-content-center">
+                <img class="mobile-phone-img" src="./assets/images/mobilemobile.png"/>
               </div>
             </div>
           </section>
 
           <section class="section-three">
             <div class="section-three-content">
-              <p class="trend-banner-txt white recieve-sty">Receive Payments <br/> In Crypto</p>
+              <p class="banner-txt white font-bold">Receive Payments <br/> In Crypto</p>
               <p class="trend-sub-head mt-4 white">
                 More than creating a seamless platform for you to perform crypto <br/>
                 transactions, we are with you every step of the way, providing <br/>
@@ -159,8 +164,8 @@
           </section>
 
           <section class="section-four">
-            <p class="heading pb-5">Invest in the future with Confidence</p>
-            <div class="row">
+            <p class="heading font-bold">Invest in the future with Confidence</p>
+            <div class="row section-four-child">
               <div class="invest-child col-md-4 col-lg-4 col-sm-12 col-xs-12">
                 <div class="coin-img mb-2">
                   <img src="./assets/images/crypto.png"/>
@@ -199,7 +204,7 @@
           <section class="section-five">
             <div class="row">
               <div class="col-md-6 col-sm-12 col-lg-6 col-xs-12">
-                <p class="mt-3 five-banner-txt">Top Up your <br/> Mobile Phone With <br/> Ease From Us</p>
+                <p style="color: black;" class="mt-3 font-bold banner-txt">Top Up your <br/> Mobile Phone With <br/> Ease From Us</p>
                 <p class="trend-sub-head mt-4">
                   More than creating a seamless platform for you to perform crypto <br/>
                   transactions, we are with you every step of the way, providing <br/>
@@ -211,46 +216,50 @@
                 </div>
               </div>
               <div class="col-md-6 col-sm-12 col-lg-6 col-xs-12">
-                <img class="mobile-phone-img img-group" src="./assets/images/Group60.png" height="400"/>
+                <img class="group-img img-group" src="./assets/images/Group60.png"/>
               </div>
             </div>
           </section>
 
           <section class="section-six">
-            <div class="row">
-              <div class="col-md-6 col-sm-12 col-lg-6 col-xs-12 mb-5">
-                <p class="trend-ban-txt txt-white">How To Get Started</p>
-                <p class="trend-sub-head mt-4 txt-white">
-                  Simple and easy way to start your investment <br/>
-                  in cryptocurrency
-                </p>
+            <div class="row section-six-child">
+              <div class="col-md-6 col-sm-12 col-lg-6 col-xs-12 mb-5 d-flex justify-content-center">
+                <div>
+                  <p class="font-bold banner-txt2">How To Get Started</p>
+                  <p class="trend-sub-head mt-4 txt-white">
+                    Simple and easy way to start your investment <br/>
+                    in cryptocurrency
+                  </p>
 
-                <div class="mt-5">
-                  <a class="register-btn" href="register.html">Get Started Now</a>
+                  <div class="mt-5">
+                    <a class="register-btn" href="register.html">Get Started Now</a>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-6 col-sm-12 col-lg-6 col-xs-12">
-                <div class="dark-card">
-                  <img class="" src="./assets/images/template-1.png" width="70" height="70"/>
-                  <div class="pl-3">
-                    <p class="mb-0 w-700">Create Your Account</p>
-                    <p class="mb-0">Your account and personal identity are <br/> guaranteed safe.</p>
+              <div class="col-md-6 col-sm-12 col-lg-6 col-xs-12 d-flex justify-content-center">
+                <div>
+                  <div class="dark-card">
+                    <img class="" src="./assets/images/template-1.png" width="70" height="70"/>
+                    <div class="pl-3">
+                      <p class="mb-0 w-700">Create Your Account</p>
+                      <p class="mb-0">Your account and personal identity are <br/> guaranteed safe.</p>
+                    </div>
                   </div>
-                </div>
-
-                <div class="dark-card">
-                  <img class="" src="./assets/images/template-3.png" width="70" height="70"/>
-                  <div class="pl-3">
-                    <p class="mb-0 w-700">Connect Bank Account</p>
-                    <p class="mb-0">Connect the bank account to start transactions.</p>
+  
+                  <div class="dark-card">
+                    <img class="" src="./assets/images/template-3.png" width="70" height="70"/>
+                    <div class="pl-3">
+                      <p class="mb-0 w-700">Connect Bank Account</p>
+                      <p class="mb-0">Connect the bank account to start transactions.</p>
+                    </div>
                   </div>
-                </div>
-
-                <div class="dark-card">
-                  <img class="" src="./assets/images/template-2.png" width="70" height="70"/>
-                  <div class="pl-3">
-                    <p class="mb-0 w-700">Start Build Portfolio</p>
-                    <p class="mb-0">Buy and sell popular currencies and <br/> keep track of them.</p>
+  
+                  <div class="dark-card">
+                    <img class="" src="./assets/images/template-2.png" width="70" height="70"/>
+                    <div class="pl-3">
+                      <p class="mb-0 w-700">Start Build Portfolio</p>
+                      <p class="mb-0">Buy and sell popular currencies and <br/> keep track of them.</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -260,7 +269,7 @@
           <section class="section-seven">
             <div class="row">
               <div class="col-md-6 col-sm-12 col-lg-6 col-xs-12">
-                <p class="seven-banner-txt">Your Favourite Trust <br/>
+                <p class="seven-banner-txt font-bold banner-txt">Your Favourite Trust <br/>
                   the Brand. <br/> Stop Stalling, Start <br/> Trading.</p>
                 <p class="trend-sub-head mt-4">
                   More than creating a seamless platform for you to perform crypto <br/>
@@ -279,7 +288,7 @@
           </section>
 
           <section class="section-eight">
-            <h3 class="trend-ban-txt txt-white">Market Update</h3>
+            <h3 class="trend-ban-txt txt-white font-bold">Market Update</h3>
             <p class="txt-white">All Cryptocurrencies</p>
 
             <table>
@@ -354,13 +363,58 @@
                     <button class="trade-btn">Trade</button>
                   </td>
                 </tr>
+                <tr>
+                  <td><span class="ml-4">5</span></td>
+                  <td>
+                    <span class="d-flex sit-right mt-1">
+                      <img src="./assets/images/tether.png" height="30"/>
+                      <p class="ml-3 mt-1"> Tether | USDT</p>
+                    </span>
+                  </td>
+                  <td>$213.67</td>
+                  <td>-0.53%</td>
+                  <td><img src="./assets/images/chart-state-red.png"/></td>
+                  <td>
+                    <button class="trade-btn">Trade</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="ml-4">6</span></td>
+                  <td>
+                    <span class="d-flex sit-right mt-1">
+                      <img src="./assets/images/tether.png" height="30"/>
+                      <p class="ml-3 mt-1"> Tether | USDT</p>
+                    </span>
+                  </td>
+                  <td>$213.67</td>
+                  <td>-0.53%</td>
+                  <td><img src="./assets/images/chart-state-red.png"/></td>
+                  <td>
+                    <button class="trade-btn">Trade</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="ml-4">7</span></td>
+                  <td>
+                    <span class="d-flex sit-right mt-1">
+                      <img src="./assets/images/tether.png" height="30"/>
+                      <p class="ml-3 mt-1"> Tether | USDT</p>
+                    </span>
+                  </td>
+                  <td>$213.67</td>
+                  <td>-0.53%</td>
+                  <td><img src="./assets/images/chart-state-red.png"/></td>
+                  <td>
+                    <button class="trade-btn">Trade</button>
+                  </td>
+                </tr>
               </tbody>
             </table>
 
           </section>
 
           <section class="section-nine">
-            <p class="nine-banner-txt text-center">What our customers are saying</p>
+            <p class="nine-banner-txt font-bold text-center">What our customers are saying</p>
             <p class="text-center mb-5">Simple and easy way to start your investment <br/> in cryptocurrency</p>
 
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -442,7 +496,12 @@
                   <ul class="list-unstyled">
                     <li>
                       <p>
-                        <a class="txt-white footer-link" href="#!">About</a>
+                        <a class="txt-white footer-link" href="about.html">Who We Are</a>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <a class="txt-white footer-link" href="terms-and-privacy.html">Terms & Privacy</a>
                       </p>
                     </li>
                     <li>
@@ -452,12 +511,7 @@
                     </li>
                     <li>
                       <p>
-                        <a class="txt-white footer-link" href="#!">BLOG</a>
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        <a class="txt-white footer-link" href="#!">Legal & privacy</a>
+                        <a class="txt-white footer-link" href="faq.html">FAQ</a>
                       </p>
                     </li>
                   </ul>
@@ -468,22 +522,22 @@
                   <ul class="list-unstyled">
                     <li>
                       <p>
-                        <a class="txt-white footer-link" href="#!">Applications</a>
+                        <a class="txt-white footer-link" href="refill.html">Refill</a>
                       </p>
                     </li>
                     <li>
                       <p>
-                        <a class="txt-white footer-link" href="#!">Buy Crypto</a>
+                        <a class="txt-white footer-link" href="otc.html">OTC</a>
                       </p>
                     </li>
                     <li>
                       <p>
-                        <a class="txt-white footer-link" href="#!">Affiliate</a>
+                        <a class="txt-white footer-link" href="#!">Trade Crypto</a>
                       </p>
                     </li>
                     <li>
                       <p>
-                        <a class="txt-white footer-link" href="#!">Institutional Services</a>
+                        <a class="txt-white footer-link" href="#!">NFT</a>
                       </p>
                     </li>
                   </ul>
@@ -494,22 +548,12 @@
                   <ul class="list-unstyled">
                     <li>
                       <p>
-                        <a class="txt-white footer-link" href="#!">What is Cryptocurency?</a>
+                        <a class="txt-white footer-link" href="#!">Contact Us</a>
                       </p>
                     </li>
                     <li>
                       <p>
-                        <a class="txt-white footer-link" href="#!">Crypto Basic</a>
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        <a class="txt-white footer-link" href="#!">Tips and Tutorials</a>
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        <a class="txt-white footer-link" href="#!">Market Update</a>
+                        <a class="txt-white footer-link" href="create-ticket.html">Create a Ticket</a>
                       </p>
                     </li>
                   </ul>
