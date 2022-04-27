@@ -951,6 +951,7 @@ tr {
 
 .section-two-terms {
     padding: 5rem;
+    padding-top: 0rem;
 }
 
 .contact-input-field {
