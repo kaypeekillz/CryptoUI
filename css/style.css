@@ -854,9 +854,25 @@ tr {
 
 .form-field-public {
     border-radius: 5px;
-    border: 2px solid #8692A6;
+    border: 0.5px solid #8692A6;
     color: #8692A6;
-    padding: 10px;
+    padding: 15px;
+}
+.form-field-public::-webkit-input-placeholder, option {
+    font-size: 14px;
+    font-family: "font-light" !important;
+    color: #8692A6;
+}
+.form-field-public::-moz-placeholder {
+    font-size: 14px;
+    font-family: "font-light" !important;
+    color: #8692A6;
+   
+}
+.form-field-public::-ms-input-placeholder {
+    font-size: 14px;
+    font-family: "font-light" !important;
+    color: #8692A6;
 }
 
 .otc-cards {
@@ -865,13 +881,13 @@ tr {
 
 .otc-ul {
     border: 1px solid #dee2e6;
-    padding: 5px !important;
+    padding: 10px 5px !important;
     border-radius: 5px;
 }
 
 .nav-otc-btn:hover {
     color: black !important;
-    border: none !important;
+    border: 1px solid #fff !important;
 }
 
 .nav-otc-item {
@@ -892,8 +908,9 @@ tr {
     text-align: center;
     width: 100%;
     background-color: white;
-    padding: 5px;
-    height: 40px;
+    padding-top: 25px;
+    height: 45px;
+    
 }
 
 .nav-otc-btn.active {

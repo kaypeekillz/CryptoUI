@@ -1,285 +1,481 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Crypto</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
-            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
-            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <head>
+    <title>Crypto</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top refill-nav">
+      <!-- style="background: rgba(0, 0, 0, 0.3) !important;" -->
+      <a href="home.html">
+        <img
+          class="navbar-brand"
+          alt="crypto-logo"
+          style="max-height: 80px"
+          src="assets/images/black-logo.png"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    </head>
-    <body>  
-        <nav class="navbar navbar-expand-lg fixed-top refill-nav">
-          <!-- style="background: rgba(0, 0, 0, 0.3) !important;" -->
-            <a href="home.html">
-              <img class="navbar-brand" alt="crypto-logo" width="180" height="80" src="assets/images/black-logo.png"/>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              <span class="navbar-toggler-icon"></span>
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a style="color: black;" class="nav-link" href="about.html">About Us <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a style="color: black;" class="nav-link" href="refill.html">Refill</a>
-                </li>
-                <li class="nav-item">
-                    <a style="color: black;" class="nav-link active" href="otc.html">OTC</a>
-                  </li>
-                <li class="nav-item">
-                  <a style="color: black;" class="nav-link" href="create-ticket.html">Create a ticket</a>
-                </li>
-              </ul>
-              <ul class="navbar-nav ml-auto">
-                <a class="login-btn" href="login.html">Login</a>
-                <a class="register-btn" href="register.html">Register</a>
-              </ul>
-            </div>
-          </nav>
-          
-          <section class="ticket-banner otc-banner">
-            <div class="ticket-banner-content">
-              <p class="banner-txt2 font-bold black-txt mt-3">
-                <span class="font-bold" style="color: #8568C6;">Personalized</span> crypto <span class="font-bold" style="color: #8568C6;">OTC</span> for <br/> Individuals and businesses 
-              </p>
-              <p class="sub-txt-otc">Whether you’re an institution, high volume trader or a new <br/> crypto bro, we have designed our OTC service to help you <br/> trade coins without stress.</p>
-            </div>
-          </section>
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a style="color: black" class="nav-link" href="about.html"
+              >About Us <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a style="color: black" class="nav-link" href="refill.html"
+              >Refill</a
+            >
+          </li>
+          <li class="nav-item">
+            <a style="color: black" class="nav-link active" href="otc.html"
+              >OTC</a
+            >
+          </li>
+          <li class="nav-item">
+            <a style="color: black" class="nav-link" href="create-ticket.html"
+              >Create a ticket</a
+            >
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <a class="login-btn" href="login.html">Login</a>
+          <a class="register-btn" href="register.html">Register</a>
+        </ul>
+      </div>
+    </nav>
 
-          <section class="otc-section-two">
-            <div class="">
-                <div class="p-5 otc-cards">
-                    <p class="ppl-cl font-bold">Transaction Type</p>
-                    <div class="">
-                        <ul class="otc-ul nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item nav-otc-item">
-                                <a class="nav-otc-btn nav-link active focus font-bold" id="send-tab" data-toggle="tab" href="#send" role="tab" aria-controls="send" aria-selected="true">Buy Transaction</a>
-                            </li>
-                            <li class="nav-item nav-otc-item">
-                                <a class="nav-otc-btn nav-link font-bold" id="recieve-tab" data-toggle="tab" href="#recieve" role="tab" aria-controls="recieve" aria-selected="false">Sell Transaction</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- TABLE AND TABS -->
-                    <div class="tab-content p-0" id="myTabContent">
-                        <!-- FIRST TAB -->
-                        <div class="tab-pane fade show active" id="send" role="tabpanel" aria-labelledby="send-tab">
-                            <div class="mt-5">
-                                <p class="mb-2 black-txt">Personal Info</p>
-                                <div>
-                                    <div>
-                                        <input class="form-field-public w-100" placeholder="Email"/>
-                                    </div>
+    <section class="ticket-banner otc-banner">
+      <div class="ticket-banner-content">
+        <p class="banner-txt2 font-medium black-txt mt-3">
+          <span class="font-medium" style="color: #8568c6">Personalized</span>
+          crypto <span class="font-medium" style="color: #8568c6">OTC</span> for
+          <br />
+          Individuals and businesses
+        </p>
+        <p class="sub-txt-otc" style="font-size: 16px; line-height: 26px">
+          Whether you’re an institution, high volume trader or a new <br />
+          crypto bro, we have designed our OTC service to help you <br />
+          trade coins without stress.
+        </p>
+      </div>
+    </section>
 
-                                    <div class="mt-3">
-                                        <select class="form-field-public w-100">
-                                            <option selected disabled>Select Country</option>
-                                            <option>Nigeria</option>
-                                            <option>Ghana</option>
-                                        </select>
-                                        <!-- <input class="form-field-public w-100" placeholder="Enter transaction ID"/> -->
-                                    </div>
-
-                                    <div class="mt-3">
-                                        <input class="form-field-public w-100" placeholder="Wallet Address"/>
-                                    </div>
-
-                                    <div class="mt-3">
-                                        <input class="form-field-public w-100" placeholder="Phone Number"/>
-                                    </div>
-
-                                    <div class="mt-3">
-                                        <input class="form-field-public w-100" placeholder="Transaction Amount"/>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="mt-5">
-                                <p class="mb-2 black-txt">Bank Details</p>
-                                <div>
-                                    <div class="mt-3">
-                                        <select class="form-field-public w-100">
-                                            <option selected disabled>Select Bank</option>
-                                            <option>First Bank</option>
-                                            <option>Access Bank</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="mt-3">
-                                        <input class="form-field-public w-100" placeholder="Account Number"/>
-                                    </div>
-
-                                    <div class="mt-3">
-                                        <input class="form-field-public w-100" placeholder="Bank Account Name"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="register-btn send-btnnn w-100 mt-3" > Send Message</button>
-                        </div>
-                        <!-- SECOND TAB -->
-                        <div class="tab-pane fade" id="recieve" role="tabpanel" aria-labelledby="recieve-tab">
-                            <div class="mt-5">
-                                <p class="mb-2 black-txt">Personal Info</p>
-                                <div>
-                                    <div>
-                                        <input class="form-field-public w-100" placeholder="Email"/>
-                                    </div>
-
-                                    <div class="mt-3">
-                                        <select class="form-field-public w-100">
-                                            <option selected disabled>Select Country</option>
-                                            <option>Nigeria</option>
-                                            <option>Ghana</option>
-                                        </select>
-                                        <!-- <input class="form-field-public w-100" placeholder="Enter transaction ID"/> -->
-                                    </div>
-
-                                    <div class="mt-3">
-                                        <input class="form-field-public w-100" placeholder="Wallet Address"/>
-                                    </div>
-
-                                    <div class="mt-3">
-                                        <input class="form-field-public w-100" placeholder="Phone Number"/>
-                                    </div>
-
-                                    <div class="mt-3">
-                                        <input class="form-field-public w-100" placeholder="Transaction Amount"/>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="mt-5">
-                                <p class="mb-2 black-txt">Bank Details</p>
-                                <div>
-                                    <div class="mt-3">
-                                        <select class="form-field-public w-100">
-                                            <option selected disabled>Select Bank</option>
-                                            <option>First Bank</option>
-                                            <option>Access Bank</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="mt-3">
-                                        <input class="form-field-public w-100" placeholder="Account Number"/>
-                                    </div>
-
-                                    <div class="mt-3">
-                                        <input class="form-field-public w-100" placeholder="Bank Account Name"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="register-btn send-btnnn w-100 mt-3" > Send Message</button>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-          </section>
-
-          <!-- Footer -->
-          <footer class="page-footer font-small mdb-color lighten-3 pt-4">
-            <div class="footer-header">
-              <p class="text-center txt-white">Ready to join the future of money?</p>
-              <p class="footer-heading text-center txt-white">Start Trading On 
-                  <span class="crypto-span font-bold">
-                    <img src="./assets/images/logo.png" width="180" height="80"/>
-                  </span> now <img src="./assets/images/Chevron_Right_Duo.png"/>
-              </p>
-            </div>
-            <div class="text-center text-md-left">
-              <div class="row">
-                <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
-                  <span class="font-weight-bold text-uppercase mb-4">
-                    <img class="navbar-brand" href="#" alt="crypto-logo" width="130" height="35" src="assets/images/logo.png"/>
-                  </span>
-                  <div class="mt-5">
-                    <img src="./assets/images/instagram-ic.png" class="pointer"/>
-                    <img src="./assets/images/facebook-ic.png" class="pointer"/>
-                    <img src="./assets/images/twitter-ic.png" class="pointer"/>
-                    <img src="./assets/images/youtube-ic.png" class="pointer"/>
+    <section class="otc-section-two">
+      <div class="">
+        <div class="p-5 otc-cards large-shadow">
+          <p class="ppl-cl font-regular" style="font-size: 18px">
+            Transaction Type
+          </p>
+          <div class="">
+            <ul class="otc-ul nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item nav-otc-item">
+                <a
+                  class="nav-otc-btn nav-link active focus font-light pt-2"
+                  data-toggle="tab"
+                  href="#send"
+                  role="tab"
+                  aria-controls="send"
+                  aria-selected="true"
+                  style="font-size: 15px"
+                  >Buy Transaction</a
+                >
+              </li>
+              <li class="nav-item nav-otc-item">
+                <a
+                  class="nav-otc-btn nav-link font-light pt-2"
+                  id="recieve-tab"
+                  data-toggle="tab"
+                  href="#recieve"
+                  role="tab"
+                  aria-controls="recieve"
+                  aria-selected="false"
+                  style="font-size: 15px"
+                  >Sell Transaction</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- TABLE AND TABS -->
+          <div class="tab-content p-0" id="myTabContent">
+            <!-- FIRST TAB -->
+            <div
+              class="tab-pane fade show active"
+              id="send"
+              role="tabpanel"
+              aria-labelledby="send-tab"
+            >
+              <div class="mt-5">
+                <p class="mb-2 black-txt font-light">Personal Info</p>
+                <div>
+                  <div>
+                    <input
+                      class="form-field-public w-100 font-light"
+                      placeholder="Email"
+                    />
                   </div>
 
-                  <p class="txt-white mt-3">2021 Cryptomarket. All rights reserved</p>
-                </div>
-                <hr class="clearfix w-100 d-md-none">
-                <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
-                  <h5 class="font-weight-bold mb-4 txt-white">About Us</h5>
-                  <ul class="list-unstyled">
-                    <li>
-                      <p>
-                        <a class="txt-white footer-link" href="about.html">Who We Are</a>
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        <a class="txt-white footer-link" href="terms-and-privacy.html">Terms & Privacy</a>
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        <a class="txt-white footer-link" href="#!">Career</a>
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        <a class="txt-white footer-link" href="faq.html">FAQ</a>
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-                <hr class="clearfix w-100 d-md-none">
-                <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
-                  <h5 class="font-weight-bold mb-4 txt-white">Services</h5>
-                  <ul class="list-unstyled">
-                    <li>
-                      <p>
-                        <a class="txt-white footer-link" href="refill.html">Refill</a>
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        <a class="txt-white footer-link" href="otc.html">OTC</a>
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        <a class="txt-white footer-link" href="#!">Trade Crypto</a>
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        <a class="txt-white footer-link" href="#!">NFT</a>
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-                <hr class="clearfix w-100 d-md-none">
-                <div class="col-md-2 col-lg-2 mx-auto my-4">
-                  <h5 class="font-weight-bold mb-4 txt-white">Learn</h5>
-                  <ul class="list-unstyled">
-                    <li>
-                      <p>
-                        <a class="txt-white footer-link" href="#!">Contact Us</a>
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        <a class="txt-white footer-link" href="create-ticket.html">Create a Ticket</a>
-                      </p>
-                    </li>
-                  </ul>
+                  <div class="mt-3">
+                    <select
+                      class="form-field-public w-100 font-light"
+                      style="font-family: 14px"
+                    >
+                      <option selected disabled>Select Country</option>
+                      <option>Nigeria</option>
+                      <option>Ghana</option>
+                    </select>
+                    <!-- <input class="form-field-public w-100" placeholder="Enter transaction ID"/> -->
+                  </div>
+
+                  <div class="mt-3">
+                    <input
+                      class="form-field-public w-100"
+                      placeholder="Wallet Address"
+                    />
+                  </div>
+
+                  <div class="mt-3">
+                    <input
+                      class="form-field-public w-100"
+                      placeholder="Phone Number"
+                    />
+                  </div>
+
+                  <div class="mt-3">
+                    <input
+                      class="form-field-public w-100"
+                      placeholder="Transaction Amount"
+                    />
+                  </div>
                 </div>
               </div>
+
+              <div class="mt-5">
+                <p class="mb-2 black-txt font-light">Bank Details</p>
+                <div>
+                  <div class="mt-3">
+                    <select
+                      class="form-field-public w-100 font-light"
+                      style="font-family: 14px"
+                    >
+                      <option selected disabled>Select Bank</option>
+                      <option>First Bank</option>
+                      <option>Access Bank</option>
+                    </select>
+                  </div>
+
+                  <div class="mt-3">
+                    <input
+                      class="form-field-public w-100"
+                      placeholder="Account Number"
+                    />
+                  </div>
+
+                  <div class="mt-3">
+                    <input
+                      class="form-field-public w-100"
+                      placeholder="Bank Account Name"
+                    />
+                  </div>
+                </div>
+              </div>
+              <button class="register-btn send-btnnn w-100 mt-4" id="reg-btn">
+                Send Message
+              </button>
             </div>
-          </footer>
-    </body>
+            <!-- SECOND TAB -->
+            <div
+              class="tab-pane fade"
+              id="recieve"
+              role="tabpanel"
+              aria-labelledby="recieve-tab"
+            >
+              <div class="mt-5">
+                <p class="mb-2 black-txt">Personal Info</p>
+                <div>
+                  <div>
+                    <input
+                      class="form-field-public w-100"
+                      placeholder="Email"
+                    />
+                  </div>
+
+                  <div class="mt-3">
+                    <select
+                      class="form-field-public w-100 font-light"
+                      style="font-family: 14px"
+                    >
+                      <option selected disabled>Select Country</option>
+                      <option>Nigeria</option>
+                      <option>Ghana</option>
+                    </select>
+                    <!-- <input class="form-field-public w-100" placeholder="Enter transaction ID"/> -->
+                  </div>
+
+                  <div class="mt-3">
+                    <input
+                      class="form-field-public w-100"
+                      placeholder="Wallet Address"
+                    />
+                  </div>
+
+                  <div class="mt-3">
+                    <input
+                      class="form-field-public w-100"
+                      placeholder="Phone Number"
+                    />
+                  </div>
+
+                  <div class="mt-3">
+                    <input
+                      class="form-field-public w-100"
+                      placeholder="Transaction Amount"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-5">
+                <p class="mb-2 black-txt">Bank Details</p>
+                <div>
+                  <div class="mt-3">
+                    <select
+                      class="form-field-public w-100 font-light"
+                      style="font-family: 14px"
+                    >
+                      <option selected disabled>Select Bank</option>
+                      <option>First Bank</option>
+                      <option>Access Bank</option>
+                    </select>
+                  </div>
+
+                  <div class="mt-3">
+                    <input
+                      class="form-field-public w-100"
+                      placeholder="Account Number"
+                    />
+                  </div>
+
+                  <div class="mt-3">
+                    <input
+                      class="form-field-public w-100"
+                      placeholder="Bank Account Name"
+                    />
+                  </div>
+                </div>
+              </div>
+              <button class="register-btn send-btnnn w-100 mt-3" id="reg-btn">
+                Send Message
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+      <div class="footer-header">
+        <p
+          class="text-center txt-white font-light"
+          style="font-size: 24px; line-height: 28px"
+        >
+          Ready to join the future of money?
+        </p>
+        <p
+          class="footer-heading text-center font-light txt-white"
+          style="font-size: 35px; line-height: 77.5px"
+        >
+          Start Trading On
+          <span class="crypto-span font-bold">
+            <img src="./assets/images/logo.png" style="max-height: 80px" />
+          </span>
+          now <img src="./assets/images/arrow-right-double.svg" />
+        </p>
+      </div>
+      <div class="text-center text-md-left">
+        <div class="row">
+          <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+            <span class="font-weight-bold text-uppercase mb-4">
+              <img
+                class="navbar-brand"
+                href="#"
+                alt="crypto-logo"
+                style="max-height: 80px"
+                src="assets/images/logo.png"
+              />
+            </span>
+            <div class="mt-5">
+              <img src="./assets/images/instagram.svg" class="pointer" />
+              <img src="./assets/images/facebook.svg" class="pointer" />
+              <img src="./assets/images/twitter.svg" class="pointer" />
+              <img src="./assets/images/youtube.svg" class="pointer" />
+            </div>
+
+            <p class="txt-white font-light mt-4" style="font-size: 14px">
+              &copy; Stackpal. 2022 All rights reserved
+            </p>
+          </div>
+          <hr class="clearfix w-100 d-md-none" />
+          <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+            <h5 class="font-weight-bold mb-4 txt-white" style="font-size: 20px">
+              About Us
+            </h5>
+            <ul class="list-unstyled">
+              <li>
+                <p>
+                  <a
+                    class="txt-white font-light footer-link"
+                    href="about.html"
+                    style="font-size: 16px"
+                    >Who We Are</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a
+                    class="txt-white footer-link font-light"
+                    href="terms-and-privacy.html"
+                    style="font-size: 16px"
+                    >Terms & Privacy</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a
+                    class="txt-white footer-link font-light"
+                    style="font-size: 16px"
+                    href="#!"
+                    >Career</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a
+                    class="txt-white footer-link font-light"
+                    style="font-size: 16px"
+                    href="faq.html"
+                    >FAQ</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+          <hr class="clearfix w-100 d-md-none" />
+          <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+            <h5 class="font-weight-bold mb-4 txt-white" style="font-size: 24px">
+              Services
+            </h5>
+            <ul class="list-unstyled">
+              <li>
+                <p>
+                  <a
+                    class="txt-white footer-link font-light"
+                    style="font-size: 16px"
+                    href="refill.html"
+                    >Refill</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a
+                    class="txt-white footer-link font-light"
+                    style="font-size: 16px"
+                    href="otc.html"
+                    >OTC</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a
+                    class="txt-white footer-link font-light"
+                    style="font-size: 16px"
+                    href="#!"
+                    >Trade Crypto</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a
+                    class="txt-white footer-link font-light"
+                    style="font-size: 16px"
+                    href="#!"
+                    >NFT</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+          <hr class="clearfix w-100 d-md-none" />
+          <div class="col-md-2 col-lg-2 mx-auto my-4">
+            <h5 class="font-weight-bold mb-4 txt-white" style="font-size: 24px">
+              Learn
+            </h5>
+            <ul class="list-unstyled">
+              <li>
+                <p>
+                  <a
+                    class="txt-white footer-link font-light"
+                    style="font-size: 16px"
+                    href="#!"
+                    >Contact Us</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a
+                    class="txt-white footer-link font-light"
+                    style="font-size: 16px"
+                    href="create-ticket.html"
+                    >Create a Ticket</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
