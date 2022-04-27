@@ -783,7 +783,9 @@ tr {
     width: 20%;
 }
 
-
+.bg-lilac  {
+    background-color: #F3F0FA;
+}
 
 .mobile-phone-img {
     height: 600px;
