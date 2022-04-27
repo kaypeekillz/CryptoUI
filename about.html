@@ -1,293 +1,393 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Crypto</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
-            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
-            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
-            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <head>
+    <title>Crypto</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+      <!-- style="background: rgba(0, 0, 0, 0.3) !important;" -->
+      <a href="home.html">
+        <img
+          id="default-logo"
+          class="navbar-brand"
+          alt="crypto-logo"
+          style="max-height: 80px"
+          src="assets/images/logo.png"
+        />
+        <img
+          id="scroll-logo"
+          class="navbar-brand"
+          alt="crypto-logo"
+          style="max-height: 80px; display: none"
+          src="assets/images/black-logo.png"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg fixed-top">
-        <!-- <nav class="navbar navbar-expand-lg fixed-top about-nav"> -->
-            <a href="home.html">
-              <img class="navbar-brand" alt="crypto-logo" width="180" height="80" src="assets/images/logo.png"/>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              <span class="navbar-toggler-icon"></span>
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">About Us <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="refill.html">Refill</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="otc.html">OTC</a>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="create-ticket.html">Create a ticket</a>
-                </li>
-              </ul>
-              <ul class="navbar-nav ml-auto">
-                <a class="login-btn" href="login.html">Login</a>
-                <a class="register-btn" href="register.html">Register</a>
-              </ul>
-            </div>
-          </nav>
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav ml-auto font-light">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html"
+              >About Us <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="refill.html">Refill</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="otc.html">OTC</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="create-ticket.html">Create a ticket</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <a class="login-btn" href="login.html">Login</a>
+          <a class="register-btn" href="register.html">Register</a>
+        </ul>
+      </div>
+    </nav>
 
-          <section class="about-banner">
-            <div class="about-banner-content">
-              <p class="banner-txt font-bold">About StackPal</p>
-              <p class="white sub-head mt-4 pl-3 pr-3">
-                Join millions of people to buy and sell crypto currencies the <br/>
-                secure and secure way  Stackpal is the place to make your future investments <br/> 
-                that would make the difference
-              </p>
+    <section class="about-banner">
+      <div class="about-banner-content">
+        <p class="banner-txt font-bold" style="font-size: 70px">
+          About StackPal
+        </p>
+        <p class="white sub-head mt-4 pl-3 pr-3 font-light">
+          Join millions of people to buy and sell crypto currencies the <br />
+          secure and secure way Stackpal is the place to make your future
+          investments <br />
+          that would make the difference
+        </p>
+      </div>
+      <div class="about-banner-bottom">
+        <div class="display-flex justify-content-between">
+          <div>
+            <p class="white about-banner-txt font-bold">1.5bn</p>
+            <p class="text-center white sub-head mt-3 font-light">
+              Avg daily Volume
+            </p>
+          </div>
+          <div>
+            <p class="white about-banner-txt font-bold">1,000,000+</p>
+            <p class="text-center white font-light sub-head mt-3">
+              Transactions Per Second
+            </p>
+          </div>
+          <div>
+            <p class="white about-banner-txt font-bold">24/7</p>
+            <p class="text-center white sub-head mt-3 font-light">Support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section-two mt-4">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 col-lg-6 col-xs-12">
+          <img src="./assets/images/about-eye.svg" />
+          <h4 class="font-medium mt-4">Who We Are</h4>
+          <p class="trend-sub-head mt-4 font-light">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. In feentum est
+            ultrices sodales arcu cursus eu malesuada suscipit. Consectetur
+            adipisci elit. In fermentum est ultrices sodales
+          </p>
+
+          <p class="trend-sub-head mt-4 font-light">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. In feentum est
+            ultrices sodales arcu cursus eu malesuada suscipit. Consectetur
+            adipisci elit. In fermentum est ultrices sodales
+          </p>
+        </div>
+        <div class="col-md-6 col-sm-12 col-lg-6 col-xs-12">
+          <img src="./assets/images/about-briefcase.svg" />
+          <h4 class="font-medium mt-3">What We Do</h4>
+          <p class="trend-sub-head mt-4 font-light">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. In feentum est
+            ultrices sodales arcu cursus eu malesuada suscipit. Consectetur
+            adipisci elit. In fermentum est ultrices sodales
+          </p>
+
+          <p class="trend-sub-head mt-4 font-light">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. In feentum est
+            ultrices sodales arcu cursus eu malesuada suscipit. Consectetur
+            adipisci elit. In fermentum est ultrices sodales
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section-three">
+      <p class="font-medium mb-5 text-center pt-4" style="font-size: 1.5rem">
+        Meet the Team
+      </p>
+      <div class="display-flex block-display">
+        <div class="staff-item">
+          <img src="./assets/images/staff-1.png" class="staff-img" />
+          <div class="text-center">
+            <p class="font-bold mb-0">Angela Kem</p>
+            <p>CEO</p>
+          </div>
+        </div>
+        <div class="staff-item">
+          <img src="./assets/images/staff2.png" class="staff-img" />
+          <div class="text-center">
+            <p class="font-bold mb-0">Angela Kem</p>
+            <p>CEO</p>
+          </div>
+        </div>
+        <div class="staff-item">
+          <img src="./assets/images/staff3.png" class="staff-img" />
+          <div class="text-center">
+            <p class="font-bold mb-0">Angela Kem</p>
+            <p>CEO</p>
+          </div>
+        </div>
+        <div class="staff-item">
+          <img src="./assets/images/staff4.png" class="staff-img" />
+          <div class="text-center">
+            <p class="font-bold mb-0">Angela Kem</p>
+            <p>CEO</p>
+          </div>
+        </div>
+        <div class="staff-item">
+          <img src="./assets/images/staff5.png" class="staff-img" />
+          <div class="text-center">
+            <p class="font-bold mb-0">Angela Kem</p>
+            <p>CEO</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+      <div class="footer-header">
+        <p
+          class="text-center txt-white font-light"
+          style="font-size: 24px; line-height: 28px"
+        >
+          Ready to join the future of money?
+        </p>
+        <p
+          class="footer-heading text-center font-light txt-white"
+          style="font-size: 35px; line-height: 77.5px"
+        >
+          Start Trading On
+          <span class="crypto-span font-bold">
+            <img src="./assets/images/logo.png" style="max-height: 80px" />
+          </span>
+          now <img src="./assets/images/arrow-right-double.svg" />
+        </p>
+      </div>
+      <div class="text-center text-md-left">
+        <div class="row">
+          <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+            <span class="font-weight-bold text-uppercase mb-4">
+              <img
+                class="navbar-brand"
+                href="#"
+                alt="crypto-logo"
+                style="max-height: 80px"
+                src="assets/images/logo.png"
+              />
+            </span>
+            <div class="mt-5">
+              <img src="./assets/images/instagram.svg" class="pointer" />
+              <img src="./assets/images/facebook.svg" class="pointer" />
+              <img src="./assets/images/twitter.svg" class="pointer" />
+              <img src="./assets/images/youtube.svg" class="pointer" />
             </div>
-            <div class="about-banner-bottom">
-                <div class="display-flex justify-content-between">
-                    <div>
-                        <p class="white about-banner-txt font-bold">1.5bn</p>
-                        <p class="text-center white sub-head mt-3">Avg daily Volume</p>
-                    </div>
-                    <div>
-                        <p class="white about-banner-txt font-bold">1,000,000+</p>
-                        <p class="text-center white sub-head mt-3">Transactions Per Second</p>
-                    </div>
-                    <div>
-                        <p class="white about-banner-txt font-bold">24/7</p>
-                        <p class="text-center white sub-head mt-3">Support</p>
-                    </div>
-                </div>
-            </div>
-          </section>
-          
-          <section class="about-section-two">
-            
-            <div class="row">
-              <div class="col-md-6 col-sm-12 col-lg-6 col-xs-12">
-                <img src="./assets/images/fluent_eye-tracking-24-regular.png"/>
-                <h4 class="font-bold mt-4">What We Do</h4>
-                <p class="trend-sub-head mt-4">
-                    Lorem ipsum dolor sit amet,  consectetur adipiscing elit. In Lorem ipsum
-                    dolor sit amet,  consectetur adipiscing elit. In feentum est ultrices sodales 
-                   arcu cursus eu malesuada suscipit. Consectetur adipisci elit. In fermentum
-                    est ultrices sodales 
+
+            <p class="txt-white font-light mt-4" style="font-size: 14px">
+              &copy; Stackpal. 2022 All rights reserved
+            </p>
+          </div>
+          <hr class="clearfix w-100 d-md-none" />
+          <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+            <h5 class="font-weight-bold mb-4 txt-white" style="font-size: 20px">
+              About Us
+            </h5>
+            <ul class="list-unstyled">
+              <li>
+                <p>
+                  <a
+                    class="txt-white font-light footer-link"
+                    href="about.html"
+                    style="font-size: 16px"
+                    >Who We Are</a
+                  >
                 </p>
-
-                <p class="trend-sub-head mt-4">
-                    Lorem ipsum dolor sit amet,  consectetur adipiscing elit. In Lorem ipsum
-                    dolor sit amet,  consectetur adipiscing elit. In feentum est ultrices sodales 
-                   arcu cursus eu malesuada suscipit. Consectetur adipisci elit. In fermentum
-                    est ultrices sodales 
+              </li>
+              <li>
+                <p>
+                  <a
+                    class="txt-white footer-link font-light"
+                    href="terms-and-privacy.html"
+                    style="font-size: 16px"
+                    >Terms & Privacy</a
+                  >
                 </p>
-              </div>
-              <div class="col-md-6 col-sm-12 col-lg-6 col-xs-12">
-                <img src="./assets/images/ic_outline-work-outline.png"/>
-                <h4 class="font-bold mt-3">Who We Are</h4>
-                <p class="trend-sub-head mt-4">
-                    Lorem ipsum dolor sit amet,  consectetur adipiscing elit. In Lorem ipsum
-                    dolor sit amet,  consectetur adipiscing elit. In feentum est ultrices sodales 
-                   arcu cursus eu malesuada suscipit. Consectetur adipisci elit. In fermentum
-                    est ultrices sodales 
+              </li>
+              <li>
+                <p>
+                  <a
+                    class="txt-white footer-link font-light"
+                    style="font-size: 16px"
+                    href="#!"
+                    >Career</a
+                  >
                 </p>
-
-                <p class="trend-sub-head mt-4">
-                    Lorem ipsum dolor sit amet,  consectetur adipiscing elit. In Lorem ipsum
-                    dolor sit amet,  consectetur adipiscing elit. In feentum est ultrices sodales 
-                   arcu cursus eu malesuada suscipit. Consectetur adipisci elit. In fermentum
-                    est ultrices sodales 
+              </li>
+              <li>
+                <p>
+                  <a
+                    class="txt-white footer-link font-light"
+                    style="font-size: 16px"
+                    href="faq.html"
+                    >FAQ</a
+                  >
                 </p>
-              </div>
-            </div>
-          </section>
-
-          <section class="about-section-three">
-              <h4 class="font-bold mb-5 text-center">Meet the Team</h4>
-              <div class="display-flex block-display">
-                <div class="staff-item">
-                    <img src="./assets/images/meet-girl.png" class="staff-img"/>
-                    <div class="text-center">
-                        <p class="font-bold mb-0">Angela Kem</p>
-                        <p>CEO</p>
-                    </div>
-                </div>
-                <div class="staff-item">
-                    <img src="./assets/images/one-human.png" class="staff-img"/>
-                    <div class="text-center">
-                        <p class="font-bold mb-0">Angela Kem</p>
-                        <p>CEO</p>
-                    </div>
-                </div>
-                <div class="staff-item">
-                    <img src="./assets/images/two-human.png" class="staff-img"/>
-                    <div class="text-center">
-                        <p class="font-bold mb-0">Angela Kem</p>
-                        <p>CEO</p>
-                    </div>
-                </div>
-                <div class="staff-item">
-                    <img src="./assets/images/two-human.png" class="staff-img"/>
-                    <div class="text-center">
-                        <p class="font-bold mb-0">Angela Kem</p>
-                        <p>CEO</p>
-                    </div>
-                </div>
-                <div class="staff-item">
-                    <img src="./assets/images/three-human.png" class="staff-img"/>
-                    <div class="text-center">
-                        <p class="font-bold mb-0">Angela Kem</p>
-                        <p>CEO</p>
-                    </div>
-                </div>
-            </div>
-            <div class="display-flex block-display mt-5">
-                <div class="staff-item">
-                    <img src="./assets/images/meet-girl.png" class="staff-img"/>
-                    <div class="text-center">
-                        <p class="font-bold mb-0">Angela Kem</p>
-                        <p>CEO</p>
-                    </div>
-                </div>
-                <div class="staff-item">
-                    <img src="./assets/images/one-human.png" class="staff-img"/>
-                    <div class="text-center">
-                        <p class="font-bold mb-0">Angela Kem</p>
-                        <p>CEO</p>
-                    </div>
-                </div>
-                <div class="staff-item">
-                    <img src="./assets/images/two-human.png" class="staff-img"/>
-                    <div class="text-center">
-                        <p class="font-bold mb-0">Angela Kem</p>
-                        <p>CEO</p>
-                    </div>
-                </div>
-                <div class="staff-item">
-                    <img src="./assets/images/two-human.png" class="staff-img"/>
-                    <div class="text-center">
-                        <p class="font-bold mb-0">Angela Kem</p>
-                        <p>CEO</p>
-                    </div>
-                </div>
-                <div class="staff-item">
-                    <img src="./assets/images/three-human.png" class="staff-img"/>
-                    <div class="text-center">
-                        <p class="font-bold mb-0">Angela Kem</p>
-                        <p>CEO</p>
-                    </div>
-                </div>
-            </div>
-          </section>
-
-          <!-- Footer -->
-          <footer class="page-footer font-small mdb-color lighten-3 pt-4">
-            <div class="footer-header">
-              <p class="text-center txt-white">Ready to join the future of money?</p>
-              <p class="footer-heading text-center txt-white">Start Trading On 
-                  <span class="crypto-span font-bold">
-                    <img src="./assets/images/logo.png" width="180" height="80"/>
-                  </span> now <img src="./assets/images/Chevron_Right_Duo.png"/>
-              </p>
-            </div>
-            <div class="text-center text-md-left">
-              <div class="row">
-                <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
-                  <span class="font-weight-bold text-uppercase mb-4">
-                    <img class="navbar-brand" href="#" alt="crypto-logo" width="130" height="35" src="assets/images/logo.png"/>
-                  </span>
-                  <div class="mt-5">
-                    <img src="./assets/images/instagram-ic.png" class="pointer"/>
-                    <img src="./assets/images/facebook-ic.png" class="pointer"/>
-                    <img src="./assets/images/twitter-ic.png" class="pointer"/>
-                    <img src="./assets/images/youtube-ic.png" class="pointer"/>
-                  </div>
-
-                  <p class="txt-white mt-3">2021 Cryptomarket. All rights reserved</p>
-                </div>
-                <hr class="clearfix w-100 d-md-none">
-                <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
-                  <h5 class="font-weight-bold mb-4 txt-white">About Us</h5>
-                  <ul class="list-unstyled">
-                    <li>
-                      <p>
-                        <a class="txt-white footer-link" href="about.html">Who We Are</a>
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        <a class="txt-white footer-link" href="terms-and-privacy.html">Terms & Privacy</a>
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        <a class="txt-white footer-link" href="#!">Career</a>
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        <a class="txt-white footer-link" href="faq.html">FAQ</a>
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-                <hr class="clearfix w-100 d-md-none">
-                <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
-                  <h5 class="font-weight-bold mb-4 txt-white">Services</h5>
-                  <ul class="list-unstyled">
-                    <li>
-                      <p>
-                        <a class="txt-white footer-link" href="refill.html">Refill</a>
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        <a class="txt-white footer-link" href="otc.html">OTC</a>
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        <a class="txt-white footer-link" href="#!">Trade Crypto</a>
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        <a class="txt-white footer-link" href="#!">NFT</a>
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-                <hr class="clearfix w-100 d-md-none">
-                <div class="col-md-2 col-lg-2 mx-auto my-4">
-                  <h5 class="font-weight-bold mb-4 txt-white">Learn</h5>
-                  <ul class="list-unstyled">
-                    <li>
-                      <p>
-                        <a class="txt-white footer-link" href="#!">Contact Us</a>
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        <a class="txt-white footer-link" href="create-ticket.html">Create a Ticket</a>
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </footer>
-    </body>
+              </li>
+            </ul>
+          </div>
+          <hr class="clearfix w-100 d-md-none" />
+          <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+            <h5 class="font-weight-bold mb-4 txt-white" style="font-size: 24px">
+              Services
+            </h5>
+            <ul class="list-unstyled">
+              <li>
+                <p>
+                  <a
+                    class="txt-white footer-link font-light"
+                    style="font-size: 16px"
+                    href="refill.html"
+                    >Refill</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a
+                    class="txt-white footer-link font-light"
+                    style="font-size: 16px"
+                    href="otc.html"
+                    >OTC</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a
+                    class="txt-white footer-link font-light"
+                    style="font-size: 16px"
+                    href="#!"
+                    >Trade Crypto</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a
+                    class="txt-white footer-link font-light"
+                    style="font-size: 16px"
+                    href="#!"
+                    >NFT</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+          <hr class="clearfix w-100 d-md-none" />
+          <div class="col-md-2 col-lg-2 mx-auto my-4">
+            <h5 class="font-weight-bold mb-4 txt-white" style="font-size: 24px">
+              Learn
+            </h5>
+            <ul class="list-unstyled">
+              <li>
+                <p>
+                  <a
+                    class="txt-white footer-link font-light"
+                    style="font-size: 16px"
+                    href="#!"
+                    >Contact Us</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a
+                    class="txt-white footer-link font-light"
+                    style="font-size: 16px"
+                    href="create-ticket.html"
+                    >Create a Ticket</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("html, body").scroll(function () {
+          if ($(document.body).scrollTop() >= 100) {
+            //alert("je");
+            $("#navbar").css({
+              "background-color": "white",
+            });
+            $(".navbar a").css({ color: "#000" });
+            $("#default-logo").hide();
+            $("#scroll-logo").show();
+          } else {
+            $("#navbar").css({ "background-color": "rgba(0, 0, 0, 0.0)" });
+            $(".navbar a").css({ color: "#fff" });
+            $("#scroll-logo").hide();
+            $("#default-logo").show();
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
