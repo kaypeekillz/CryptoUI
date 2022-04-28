@@ -1,16 +1,21 @@
 @font-face {
+    font-family: font-light;
+    src: url('../assets/fonts/Moderat-Light.ttf');
+}
+
+@font-face {
     font-family: font-bold;
     src: url('../assets/fonts/Moderat-Black.ttf');
 }
 
 @font-face {
     font-family: font-medium;
-    src: url('../assets/fonts/Moderat-Condensed-Medium.ttf');
+    src: url('../assets/fonts/Moderat-Medium.ttf');
 }
 
 @font-face {
     font-family: font-regular;
-    src: url('../assets/fonts/Moderat-Condensed-Regular.ttf');
+    src: url('../assets/fonts/Moderat-Regular.ttf');
 }
 
 @font-face {
@@ -20,6 +25,10 @@
 
 .font-bold {
     font-family: font-bold !important;
+}
+
+.font-light {
+    font-family: font-light !important;
 }
 
 html, body { 

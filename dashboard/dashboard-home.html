@@ -1,449 +1,685 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Crypto</title>
-        <link rel="stylesheet" href="../css/dashboard-style.css" />
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
-            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
-            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
-    </head>
-    <body> 
-        <div class="main-content">
-            <nav class="sidenav nav-sidebar">
-                <div class="sticky-top logo-section">
-                    <img src="../assets/images/logo-purple.png" class="logo" width="150" height="50"/>
-                    <img src="../assets/images/Menu_Alt_01.jpg" class="logo-menu mt-2" height="30"/>
-                </div>
-                <ul class="sidenav-menu">
-                    <div class="main-menu">
-                        <div>
-                            <li class="sidenav-menu-item pointer active" href="">
-                                <a class="sidenav-link" href="dashboard-home.html">
-                                    <img src="../assets/images/Home.png" class="icon-main"/>                          
-                                    <img src="../assets/images/Home-hover.jpg" class="icon-hover"/>                          
-                                    <span class="ml-3 sidenav-text ">Home</span>
-                                </a>
-                            </li>
-                            <li class="sidenav-menu-item pointer">
-                                <a class="sidenav-link" href="fiat-wallet.html">
-                                    <img src="../assets/images/fiat-wallet.png" class="icon-main"/>                          
-                                    <img src="../assets/images/fiat-wallet-hover.png" class="icon-hover"/> 
-                                    <span class="ml-3 sidenav-text ">Fiat Wallet</span>
-                                </a>
-                            </li>
-                            <li class="sidenav-menu-item pointer">
-                                <a class="sidenav-link" href="crypto-wallet.html">
-                                    <img src="../assets/images/fiat-wallet.png" class="icon-main"/>                          
-                                    <img src="../assets/images/fiat-wallet-hover.png" class="icon-hover"/>  
-                                    <span class="ml-3 sidenav-text ">Crypto Wallet</span>
-                                </a>
-                            </li>
-                            <li class="sidenav-menu-item pointer" >
-                                <a class="sidenav-link" href="transactions.html">
-                                    <img src="../assets/images/Credit_Card_01.jpg" class="icon-main"/>                          
-                                    <img src="../assets/images/Credit_Card_01-hover.jpg" class="icon-hover"/> 
-                                    <span class="ml-3 sidenav-text ">Transactions</span>
-                                </a>
-                            </li>
-                            <li class="sidenav-menu-item pointer">
-                                <a class="sidenav-link" href="user-to-user.html">
-                                    <img src="../assets/images/Swap.png" class="icon-main" height="20"/>                          
-                                    <img src="../assets/images/Swap-hover.png" class="icon-hover"/> 
-                                    <span class="ml-3 sidenav-text ">User to User</span>
-                                </a>
-                            </li>
-                            <li class="sidenav-menu-item pointer">
-                                <a class="sidenav-link" href="refill.html">
-                                    <img src="../assets/images/Activity.png" class="icon-main"/>                          
-                                    <img src="../assets/images/Activity-hover.png" class="icon-hover"/> 
-                                    <span class="ml-3 sidenav-text ">Refill</span>
-                                </a>
-                            </li>
-                            <li class="sidenav-menu-item pointer">
-                                <a class="sidenav-link" href="loan.html">
-                                    <img src="../assets/images/loan.png" class="icon-main"/>                          
-                                    <img src="../assets/images/loan-hover.png" class="icon-hover"/>                                 
-                                    <span class="ml-3 sidenav-text ">Loan</span>
-                                </a>
-                            </li>
-        
-                            <li style="margin-top: 50px;" class="sidenav-menu-item pointer">
-                                <a class="sidenav-link" href="settings.html">
-                                    <img src="../assets/images/Setting.png" class="icon-main"/>                          
-                                    <img src="../assets/images/Setting-hover.png" class="icon-hover"/>                                                                 
-                                    <span class="ml-3 sidenav-text ">Settings</span>
-                                </a>
-                            </li>
-        
-                            <li class="sidenav-menu-item pointer">
-                                <a class="sidenav-link" href="user.html">
-                                    <img src="../assets/images/user.png" height="20" class="icon-main"/>                          
-                                    <img src="../assets/images/user-active.png" height="20" class="icon-hover"/>                
-                                    <span class="ml-3 sidenav-text ">User</span>
-                                </a>
-                            </li>
-        
-                            <li class="sidenav-menu-item pointer">
-                                <a class="sidenav-link" href="contact.html">
-                                    <img src="../assets/images/contact-us.png" class="icon-main"/>                          
-                                    <img src="../assets/images/contact-active.png" class="icon-hover"/>                                              
-                                    <span class="ml-3 sidenav-text ">Contact Us</span>
-                                </a>
-                            </li>
-                        </div>
-                    </div>
-                </ul>
-            </nav>
-        
-            <div class="page">
-                <nav class="navbar navbar-expand-md main-nav sticky-top">
-                    <div class="container-fluid justify-content-between mx-md-3 py-2 pr-0">
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <div class="flex-container ml-auto flex-end navbar-nav">
-                                <div>
-                                    <div class="align-self-center d-flex" role="button" id="dropdownMenuLinkApp" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <img src="../assets/images/notification btn.png" height="20" class="pointer mt-2"/> &nbsp; &nbsp;
-                                        <img src="../assets/images/Face.png" height="20" class="pointer mt-2"/> &nbsp; &nbsp; 
-                                        <h4 class="pointer name-text mt-2" style="color: #6F6C99;">
-                                            Angie Kem <img src="../assets/images/Down Arrow.jpg" height="7" width="10"/>
-                                        </h4> &nbsp;
-                                    </div>
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLinkApp">
-                                        <p class="pointer font-bold mb-0 text-center">
-                                            <img src="../assets/images/Log_Out.jpg"/> Log Out
-                                        </p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-                <div class="page-content">
-                    
-                    <div>
-                        <p class="color-grey">Hello Angela,</p>
-                        <p class="mb-0">WALLETS</p>
-                        
-                        <div class="horizontal-scroll">
-                            <div class="purple-card">
-                                <img src="../assets/images/naira-icn.png"/>
-                                <p class="mb-0 mt-3 color-white">Balance</p>
-                                <h3 class="color-white font-bold card-value">N 100.00</h3>
-                                <p class="color-purple">$ 20.00</p>
-                            </div>
-
-                            <div class="grey-card">
-                                <div class="d-flex justify-content-between">
-                                    <img src="../assets/images/bitcoin.png" height="20"/>
-                                    <div class="d-flex">
-                                        <img src="../assets/images/green-Shape.png" class="mt-2 mr-2" height="7"/>
-                                        <p class="color-green">+39.69%</p>
-                                    </div>
-                                </div>
-                                <p class="mb-0 color-deep-grey">Balance</p>
-                                <h3 class="color-yellow font-bold card-value">1.200 BTC</h3>
-                                <p class="color-black">$ 1000.00</p>
-                            </div>
-
-                            <div class="grey-card">
-                                <div class="d-flex justify-content-between">
-                                    <img src="../assets/images/shape.png" height="20"/>
-                                    <div class="d-flex">
-                                        <img src="../assets/images/pnk-Shape (1).png" class="mt-2 mr-2" height="7"/>
-                                        <p class="color-pink">-5.23%</p>
-                                    </div>
-                                </div>
-                                <p class="mb-0 color-deep-grey">Balance</p>
-                                <h3 class="color-deep-grey font-bold card-value">0.0012 ETH</h3>
-                                <p class="color-black">$ 1000.00</p>
-                            </div>
-
-                            <div class="grey-card">
-                                <div class="text-center mt-4">
-                                    <img src="../assets/images/Plus.png" height="30" width="30"/>
-                                    <p class="color-purple">New Asset</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row mt-3 row-div">
-                        <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 left-section">
-                            <div class="d-flex justify-content-between">
-                                <p class="mt-3 ppl-cl font-bold">RECENT TRANSACTIONS</p>
-                                <p class="color-purple-light mt-3 pointer">See All -></p>
-                            </div>
-                            <div>
-                                <table class="table table-borderless">
-                                    <thead>
-                                      <tr>
-                                        <th><span>Transactions</span></th>
-                                        <th style="text-align: end;"><span>Total</span></th>
-                                        <th style="text-align: end;"><span>Amount</span></th>
-                                        <th style="text-align: end;"><span>Status</span></th>
-                                        <th style="text-align: end;"><span>Date</span></th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="first-item d-flex">
-                                                <img src="../assets/images/shape.png" height="20" width="20"/>
-                                                <p class="first-item-txt">Ethereum Purchased</p>
-                                            </td>
-                                            <td style="text-align: end;">
-                                                <p>0.0154 ETH</p>
-                                            </td>
-                                            <td style="text-align: end;">
-                                                <p>USD $10</p>
-                                            </td>
-                                            <td style="text-align: end;"><p>Pending</p></td>
-                                            <td style="text-align: end;"><p>02/03/21</p></td>
-                                          </tr>
-                                          <tr>
-                                            <td class="first-item d-flex">
-                                                <img src="../assets/images/bitcoin.png" height="20" width="20"/>
-                                                <p class="first-item-txt">Bitcoin Sold</p>
-                                            </td>
-                                            <td style="text-align: end;">
-                                                <p>0.0154 ETH</p>
-                                            </td>
-                                            <td style="text-align: end;">
-                                                <p>USD $10</p>
-                                            </td>
-                                            <td style="text-align: end;"><p>Pending</p></td>
-                                            <td style="text-align: end;"><p>02/03/21</p></td>
-                                          </tr>
-                                          <tr>
-                                            <td class="first-item d-flex">
-                                                <img src="../assets/images/bitcoin.png" height="20" width="20"/>
-                                                <p class="first-item-txt">Bitcoin Purchased</p>
-                                            </td>
-                                            <td style="text-align: end;">
-                                                <p>0.0154 ETH</p>
-                                            </td>
-                                            <td style="text-align: end;">
-                                                <p>USD $10</p>
-                                            </td>
-                                            <td style="text-align: end;"><p>Done</p></td>
-                                            <td style="text-align: end;"><p>02/03/21</p></td>
-                                          </tr>
-                                    </tbody>
-                                  </table>
-                            </div>
-                            <div class="row p-3">
-                                <div class="p-4 col-md-4 col-lg-4 col-sm-12 col-xs-12 botton-left-left-section">
-                                    <p class="text-center">
-                                        <img style="margin: auto;" src="../assets/images/hand-phone.png"/>
-                                    </p>
-                                    <p class="ppl-cl sm-ppl mt-3 mb-3 font-bold">RECHARGE MOBILE</p>
-                                    <div class="mt-3">
-                                        <div>
-                                            <label class="mb-0">Mobile No:</label>
-                                        </div>
-                                        <input class="input-field" type="text" placeholder="Please enter mobile number"/>
-                                    </div>
-                                    <div class="mt-3">
-                                        <label class="mb-0">Select Payment Method</label>
-                                        <select class="select-item">
-                                            <option>Naira Wallet</option>
-                                        </select>
-                                    </div>
-    
-                                    <div class="mt-3">
-                                        <div>
-                                            <label class="mb-0">Amount:</label>
-                                        </div>
-                                        <input class="input-field" type="text" placeholder="Please enter amount"/>
-                                    </div>
-
-                                    <button class="mt-4 transfer-btn">Top Up</button>
-                                </div>
-
-                                <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 right-sect-inner">
-                                    <div class="p-4 botton-left-right-section">
-                                        <p class="ppl-cl sm-ppl font-bold">MARKET TRENDS</p>
-                                        <div class="p-3">
-                                            <div class="row">
-                                                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                                                    <div class="display-flex justify-content-between">
-                                                        <div class="display-flex">
-                                                            <p class="light-black">BTC</p> &nbsp; &nbsp;
-                                                            <img src="../assets/images/Icn.png" height="10" class="mt-2"/> &nbsp; &nbsp;
-                                                            <P class="light-black">USD</P>
-                                                        </div>
-                                                        <div class="display-flex">
-                                                            <img src="../assets/images/pnk-Shape (1).png" class="mt-2 mr-2" height="7"/>
-                                                            <p class="color-pink">-5.23%</p>
-                                                        </div>
-                                                    </div>
-                                                    <p class="light-black bottom-value">7.356,67</p>
-                                                    <img class="det-img" width="170" height="30" src="../assets/images/chart-state-red.png"/>
-                                                </div>
-                                                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                                                    <div class="display-flex justify-content-between">
-                                                        <div class="display-flex">
-                                                            <p class="light-black">BTC</p> &nbsp; &nbsp;
-                                                            <img src="../assets/images/Icn.png" height="10" class="mt-2"/> &nbsp; &nbsp;
-                                                            <P class="light-black">USD</P>
-                                                        </div>
-                                                        <div class="display-flex">
-                                                            <img src="../assets/images/green-Shape.png" class="mt-2 mr-2" height="7"/>
-                                                            <p class="color-green">+39.69%</p>
-                                                        </div>
-                                                    </div>
-                                                    <p class="light-black bottom-value">465,22</p>
-                                                    <img class="det-img" width="170" height="30" src="../assets/images/chart-state-green.png"/>
-                                                </div>
-                                            </div>
-                                            <div class="row mt-5">
-                                                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                                                    <div class="display-flex justify-content-between">
-                                                        <div class="display-flex">
-                                                            <p class="light-black">BTC</p> &nbsp; &nbsp;
-                                                            <img src="../assets/images/Icn.png" height="10" class="mt-2"/> &nbsp; &nbsp;
-                                                            <P class="light-black">IDR</P>
-                                                        </div>
-                                                        <div class="display-flex">
-                                                            <img src="../assets/images/green-Shape.png" class="mt-2 mr-2" height="7"/>
-                                                            <p class="color-green">+39.69%</p>
-                                                        </div>
-                                                    </div>
-                                                    <p class="light-black bottom-value">107.543,234</p>
-                                                    <img class="det-img" width="170" height="30" src="../assets/images/chart-state-purple.png"/>
-                                                </div>
-                                                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                                                    <div class="display-flex justify-content-between">
-                                                        <div class="display-flex">
-                                                            <p class="light-black">BTC</p> &nbsp; &nbsp;
-                                                            <img src="../assets/images/Icn.png" height="10" class="mt-2"/> &nbsp; &nbsp;
-                                                            <P class="light-black">IDR</P>
-                                                        </div>
-                                                        <div class="display-flex">
-                                                            <img src="../assets/images/green-Shape.png" class="mt-2 mr-2" height="7"/>
-                                                            <p class="color-green">+39.69%</p>
-                                                        </div>
-                                                    </div>
-                                                    <p class="light-black bottom-value">107.543,234</p>
-                                                    <img class="det-img" width="170" height="30" src="../assets/images/chart-state-purple.png"/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 right-parent">
-                            <div class="p-4" style="background-color: #F8F7FF;">
-                                <p class="ppl-cl mt-3 font-bold">Quick Transfer</p>
-                                <div class="">
-                                    <ul class="nav-toper nav nav-tabs" id="myTab" role="tablist">
-                                        <li class="nav-toper-item nav-item">
-                                            <a class="nav-toper-item-btn nav-link active focus font-bold" id="send-tab" data-toggle="tab" href="#send" role="tab" aria-controls="send" aria-selected="true">Send</a>
-                                        </li>
-                                        <li class="nav-toper-item nav-item">
-                                            <a class="nav-toper-item-btn nav-link font-bold" id="recieve-tab" data-toggle="tab" href="#recieve" role="tab" aria-controls="recieve" aria-selected="false">Recieve</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- TABLE AND TABS -->
-                                <div class="tab-content p-0" id="myTabContent">
-                                    <!-- FIRST TAB -->
-                                    <div class="tab-pane fade show active" id="send" role="tabpanel" aria-labelledby="send-tab">
-                                        <div class="mt-3">
-                                            <label class="mb-0">How do you want to send?</label>
-                                            <select class="select-item">
-                                                <option>User to User</option>
-                                            </select>
-                                        </div>
-        
-                                        <div class="mt-3">
-                                            <label class="mb-0">Select wallet to send from</label>
-                                            <select class="select-item">
-                                                <option>Bitcoin</option>
-                                            </select>
-                                        </div>
-        
-                                        <div class="mt-3">
-                                            <div>
-                                                <label class="mb-0">Pay to:</label>
-                                            </div>
-                                            <input class="input-field" type="text" placeholder="Please enter Username or Email"/>
-                                        </div>
-        
-                                        <div class="mt-3">
-                                            <div>
-                                                <label class="mb-0">Amount:</label>
-                                            </div>
-                                            <input class="input-field" type="text" placeholder="Please enter amount"/>
-                                        </div>
-        
-                                        <div class="mt-3 d-flex justify-content-between">
-                                            <p>Fee: &nbsp; &nbsp; <span>$0.00</span></p>
-                                            <p>Total: &nbsp; &nbsp; <span>$0.00</span></p>
-                                        </div>
-        
-                                        <button class="transfer-btn">
-                                            <img class="mb-1" src="../assets/images/Fill 1.png"/> &nbsp;
-                                            Transfer Now
-                                        </button>
-                                    </div>
-                                    <!-- SECOND TAB -->
-                                    <div class="tab-pane fade" id="recieve" role="tabpanel" aria-labelledby="recieve-tab">
-                                        <div class="mt-3">
-                                            <label class="mb-0">How do you want to send?</label>
-                                            <select class="select-item">
-                                                <option>User to User</option>
-                                            </select>
-                                        </div>
-        
-                                        <div class="mt-3">
-                                            <label class="mb-0">Select wallet to send from</label>
-                                            <select class="select-item">
-                                                <option>Bitcoin</option>
-                                            </select>
-                                        </div>
-        
-                                        <div class="mt-3">
-                                            <div>
-                                                <label class="mb-0">Pay to:</label>
-                                            </div>
-                                            <input class="input-field" type="text" placeholder="Please enter Username or Email"/>
-                                        </div>
-        
-                                        <div class="mt-3">
-                                            <div>
-                                                <label class="mb-0">Amount:</label>
-                                            </div>
-                                            <input class="input-field" type="text" placeholder="Please enter amount"/>
-                                        </div>
-        
-                                        <div class="mt-3 d-flex justify-content-between">
-                                            <p>Fee: &nbsp; &nbsp; <span>$0.00</span></p>
-                                            <p>Total: &nbsp; &nbsp; <span>$0.00</span></p>
-                                        </div>
-        
-                                        <button class="transfer-btn">
-                                            <img class="mb-1" src="../assets/images/Fill 1.png"/> &nbsp;
-                                            Transfer Now
-                                        </button>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class="bottom-right-ads-section p-4">
-                                <p class="mt-5">ADS</p>
-                            </div>
-                        </div>
-                       
-                    </div>
-                </div>
-            </div>
+  <head>
+    <title>Crypto Without Border - STACKPAL</title>
+    <link rel="icon" href="../assets/images/favicon.jpg" />
+    <link rel="stylesheet" href="../css/dashboard-style.css" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="../assets/images/" sizes="192x192" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main-content">
+      <nav class="sidenav nav-sidebar">
+        <div class="sticky-top logo-section">
+          <img
+            src="../assets/images/logo-purple.png"
+            class="logo"
+            width="150"
+            height="50"
+          />
+          <img
+            src="../assets/images/Menu_Alt_01.jpg"
+            class="logo-menu mt-2"
+            height="30"
+          />
         </div>
-    </body>
+        <ul class="sidenav-menu">
+          <div class="main-menu">
+            <div>
+              <li class="sidenav-menu-item pointer active" href="">
+                <a class="sidenav-link" href="dashboard-home.html">
+                  <img src="../assets/images/Home.png" class="icon-main" />
+                  <img
+                    src="../assets/images/Home-hover.jpg"
+                    class="icon-hover"
+                  />
+                  <span class="ml-3 sidenav-text">Home</span>
+                </a>
+              </li>
+              <li class="sidenav-menu-item pointer">
+                <a class="sidenav-link" href="fiat-wallet.html">
+                  <img
+                    src="../assets/images/fiat-wallet.png"
+                    class="icon-main"
+                  />
+                  <img
+                    src="../assets/images/fiat-wallet-hover.png"
+                    class="icon-hover"
+                  />
+                  <span class="ml-3 sidenav-text">Fiat Wallet</span>
+                </a>
+              </li>
+              <li class="sidenav-menu-item pointer">
+                <a class="sidenav-link" href="crypto-wallet.html">
+                  <img
+                    src="../assets/images/fiat-wallet.png"
+                    class="icon-main"
+                  />
+                  <img
+                    src="../assets/images/fiat-wallet-hover.png"
+                    class="icon-hover"
+                  />
+                  <span class="ml-3 sidenav-text">Crypto Wallet</span>
+                </a>
+              </li>
+              <li class="sidenav-menu-item pointer">
+                <a class="sidenav-link" href="transactions.html">
+                  <img
+                    src="../assets/images/Credit_Card_01.jpg"
+                    class="icon-main"
+                  />
+                  <img
+                    src="../assets/images/Credit_Card_01-hover.jpg"
+                    class="icon-hover"
+                  />
+                  <span class="ml-3 sidenav-text">Transactions</span>
+                </a>
+              </li>
+              <li class="sidenav-menu-item pointer">
+                <a class="sidenav-link" href="user-to-user.html">
+                  <img
+                    src="../assets/images/Swap.png"
+                    class="icon-main"
+                    height="20"
+                  />
+                  <img
+                    src="../assets/images/Swap-hover.png"
+                    class="icon-hover"
+                  />
+                  <span class="ml-3 sidenav-text">User to User</span>
+                </a>
+              </li>
+              <li class="sidenav-menu-item pointer">
+                <a class="sidenav-link" href="refill.html">
+                  <img src="../assets/images/Activity.png" class="icon-main" />
+                  <img
+                    src="../assets/images/Activity-hover.png"
+                    class="icon-hover"
+                  />
+                  <span class="ml-3 sidenav-text">Refill</span>
+                </a>
+              </li>
+              <li class="sidenav-menu-item pointer">
+                <a class="sidenav-link" href="loan.html">
+                  <img src="../assets/images/loan.png" class="icon-main" />
+                  <img
+                    src="../assets/images/loan-hover.png"
+                    class="icon-hover"
+                  />
+                  <span class="ml-3 sidenav-text">Loan</span>
+                </a>
+              </li>
+
+              <li style="margin-top: 50px" class="sidenav-menu-item pointer">
+                <a class="sidenav-link" href="settings.html">
+                  <img src="../assets/images/Setting.png" class="icon-main" />
+                  <img
+                    src="../assets/images/Setting-hover.png"
+                    class="icon-hover"
+                  />
+                  <span class="ml-3 sidenav-text">Settings</span>
+                </a>
+              </li>
+
+              <li class="sidenav-menu-item pointer">
+                <a class="sidenav-link" href="user.html">
+                  <img
+                    src="../assets/images/user.png"
+                    height="20"
+                    class="icon-main"
+                  />
+                  <img
+                    src="../assets/images/user-active.png"
+                    height="20"
+                    class="icon-hover"
+                  />
+                  <span class="ml-3 sidenav-text">User</span>
+                </a>
+              </li>
+
+              <li class="sidenav-menu-item pointer">
+                <a class="sidenav-link" href="contact.html">
+                  <img
+                    src="../assets/images/contact-us.png"
+                    class="icon-main"
+                  />
+                  <img
+                    src="../assets/images/contact-active.png"
+                    class="icon-hover"
+                  />
+                  <span class="ml-3 sidenav-text">Contact Us</span>
+                </a>
+              </li>
+            </div>
+          </div>
+        </ul>
+      </nav>
+
+      <div class="page">
+        <nav class="navbar navbar-expand-md main-nav sticky-top">
+          <div
+            class="container-fluid justify-content-between mx-md-3 py-2 pr-0"
+          >
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="flex-container ml-auto flex-end navbar-nav">
+                <div>
+                  <div
+                    class="align-self-center d-flex"
+                    role="button"
+                    id="dropdownMenuLinkApp"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="../assets/images/notification btn.png"
+                      height="20"
+                      class="pointer mt-2"
+                    />
+                    &nbsp; &nbsp;
+                    <img
+                      src="../assets/images/Face.png"
+                      height="20"
+                      class="pointer mt-2"
+                    />
+                    &nbsp; &nbsp;
+                    <h4 class="pointer name-text mt-2" style="color: #6f6c99">
+                      Angie Kem
+                      <img
+                        src="../assets/images/Down Arrow.jpg"
+                        height="7"
+                        width="10"
+                      />
+                    </h4>
+                    &nbsp;
+                  </div>
+                  <div
+                    class="dropdown-menu dropdown-menu-right"
+                    aria-labelledby="dropdownMenuLinkApp"
+                  >
+                    <p class="pointer font-bold mb-0 text-center">
+                      <img src="../assets/images/Log_Out.jpg" /> Log Out
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="page-content">
+          <div>
+            <p class="color-grey">Hello Angela,</p>
+            <p class="mb-0">WALLETS</p>
+
+            <div class="horizontal-scroll">
+              <div class="purple-card">
+                <img src="../assets/images/naira-icn.png" />
+                <p class="mb-0 mt-3 color-white">Balance</p>
+                <h3 class="color-white font-bold card-value">N 100.00</h3>
+                <p class="color-purple">$ 20.00</p>
+              </div>
+
+              <div class="grey-card">
+                <div class="d-flex justify-content-between">
+                  <img src="../assets/images/bitcoin.png" height="20" />
+                  <div class="d-flex">
+                    <img
+                      src="../assets/images/green-Shape.png"
+                      class="mt-2 mr-2"
+                      height="7"
+                    />
+                    <p class="color-green">+39.69%</p>
+                  </div>
+                </div>
+                <p class="mb-0 color-deep-grey">Balance</p>
+                <h3 class="color-yellow font-bold card-value">1.200 BTC</h3>
+                <p class="color-black">$ 1000.00</p>
+              </div>
+
+              <div class="grey-card">
+                <div class="d-flex justify-content-between">
+                  <img src="../assets/images/shape.png" height="20" />
+                  <div class="d-flex">
+                    <img
+                      src="../assets/images/pnk-Shape (1).png"
+                      class="mt-2 mr-2"
+                      height="7"
+                    />
+                    <p class="color-pink">-5.23%</p>
+                  </div>
+                </div>
+                <p class="mb-0 color-deep-grey">Balance</p>
+                <h3 class="color-deep-grey font-bold card-value">0.0012 ETH</h3>
+                <p class="color-black">$ 1000.00</p>
+              </div>
+
+              <div class="grey-card">
+                <div class="text-center mt-4">
+                  <img src="../assets/images/Plus.png" height="30" width="30" />
+                  <p class="color-purple">New Asset</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-3 row-div">
+            <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 left-section">
+              <div class="d-flex justify-content-between">
+                <p class="mt-3 ppl-cl font-bold">RECENT TRANSACTIONS</p>
+                <p class="color-purple-light mt-3 pointer">See All -></p>
+              </div>
+              <div>
+                <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th><span>Transactions</span></th>
+                      <th style="text-align: end"><span>Total</span></th>
+                      <th style="text-align: end"><span>Amount</span></th>
+                      <th style="text-align: end"><span>Status</span></th>
+                      <th style="text-align: end"><span>Date</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="first-item d-flex">
+                        <img
+                          src="../assets/images/shape.png"
+                          height="20"
+                          width="20"
+                        />
+                        <p class="first-item-txt">Ethereum Purchased</p>
+                      </td>
+                      <td style="text-align: end">
+                        <p>0.0154 ETH</p>
+                      </td>
+                      <td style="text-align: end">
+                        <p>USD $10</p>
+                      </td>
+                      <td style="text-align: end"><p>Pending</p></td>
+                      <td style="text-align: end"><p>02/03/21</p></td>
+                    </tr>
+                    <tr>
+                      <td class="first-item d-flex">
+                        <img
+                          src="../assets/images/bitcoin.png"
+                          height="20"
+                          width="20"
+                        />
+                        <p class="first-item-txt">Bitcoin Sold</p>
+                      </td>
+                      <td style="text-align: end">
+                        <p>0.0154 ETH</p>
+                      </td>
+                      <td style="text-align: end">
+                        <p>USD $10</p>
+                      </td>
+                      <td style="text-align: end"><p>Pending</p></td>
+                      <td style="text-align: end"><p>02/03/21</p></td>
+                    </tr>
+                    <tr>
+                      <td class="first-item d-flex">
+                        <img
+                          src="../assets/images/bitcoin.png"
+                          height="20"
+                          width="20"
+                        />
+                        <p class="first-item-txt">Bitcoin Purchased</p>
+                      </td>
+                      <td style="text-align: end">
+                        <p>0.0154 ETH</p>
+                      </td>
+                      <td style="text-align: end">
+                        <p>USD $10</p>
+                      </td>
+                      <td style="text-align: end"><p>Done</p></td>
+                      <td style="text-align: end"><p>02/03/21</p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="row p-3">
+                <div
+                  class="p-4 col-md-4 col-lg-4 col-sm-12 col-xs-12 botton-left-left-section"
+                >
+                  <p class="text-center">
+                    <img
+                      style="margin: auto"
+                      src="../assets/images/hand-phone.png"
+                    />
+                  </p>
+                  <p class="ppl-cl sm-ppl mt-3 mb-3 font-bold">
+                    RECHARGE MOBILE
+                  </p>
+                  <div class="mt-3">
+                    <div>
+                      <label class="mb-0">Mobile No:</label>
+                    </div>
+                    <input
+                      class="input-field"
+                      type="text"
+                      placeholder="Please enter mobile number"
+                    />
+                  </div>
+                  <div class="mt-3">
+                    <label class="mb-0">Select Payment Method</label>
+                    <select class="select-item">
+                      <option>Naira Wallet</option>
+                    </select>
+                  </div>
+
+                  <div class="mt-3">
+                    <div>
+                      <label class="mb-0">Amount:</label>
+                    </div>
+                    <input
+                      class="input-field"
+                      type="text"
+                      placeholder="Please enter amount"
+                    />
+                  </div>
+
+                  <button class="mt-4 transfer-btn">Top Up</button>
+                </div>
+
+                <div
+                  class="col-md-8 col-lg-8 col-sm-12 col-xs-12 right-sect-inner"
+                >
+                  <div class="p-4 botton-left-right-section">
+                    <p class="ppl-cl sm-ppl font-bold">MARKET TRENDS</p>
+                    <div class="p-3">
+                      <div class="row">
+                        <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                          <div class="display-flex justify-content-between">
+                            <div class="display-flex">
+                              <p class="light-black">BTC</p>
+                              &nbsp; &nbsp;
+                              <img
+                                src="../assets/images/Icn.png"
+                                height="10"
+                                class="mt-2"
+                              />
+                              &nbsp; &nbsp;
+                              <p class="light-black">USD</p>
+                            </div>
+                            <div class="display-flex">
+                              <img
+                                src="../assets/images/pnk-Shape (1).png"
+                                class="mt-2 mr-2"
+                                height="7"
+                              />
+                              <p class="color-pink">-5.23%</p>
+                            </div>
+                          </div>
+                          <p class="light-black bottom-value">7.356,67</p>
+                          <img
+                            class="det-img"
+                            width="170"
+                            height="30"
+                            src="../assets/images/chart-state-red.png"
+                          />
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                          <div class="display-flex justify-content-between">
+                            <div class="display-flex">
+                              <p class="light-black">BTC</p>
+                              &nbsp; &nbsp;
+                              <img
+                                src="../assets/images/Icn.png"
+                                height="10"
+                                class="mt-2"
+                              />
+                              &nbsp; &nbsp;
+                              <p class="light-black">USD</p>
+                            </div>
+                            <div class="display-flex">
+                              <img
+                                src="../assets/images/green-Shape.png"
+                                class="mt-2 mr-2"
+                                height="7"
+                              />
+                              <p class="color-green">+39.69%</p>
+                            </div>
+                          </div>
+                          <p class="light-black bottom-value">465,22</p>
+                          <img
+                            class="det-img"
+                            width="170"
+                            height="30"
+                            src="../assets/images/chart-state-green.png"
+                          />
+                        </div>
+                      </div>
+                      <div class="row mt-5">
+                        <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                          <div class="display-flex justify-content-between">
+                            <div class="display-flex">
+                              <p class="light-black">BTC</p>
+                              &nbsp; &nbsp;
+                              <img
+                                src="../assets/images/Icn.png"
+                                height="10"
+                                class="mt-2"
+                              />
+                              &nbsp; &nbsp;
+                              <p class="light-black">IDR</p>
+                            </div>
+                            <div class="display-flex">
+                              <img
+                                src="../assets/images/green-Shape.png"
+                                class="mt-2 mr-2"
+                                height="7"
+                              />
+                              <p class="color-green">+39.69%</p>
+                            </div>
+                          </div>
+                          <p class="light-black bottom-value">107.543,234</p>
+                          <img
+                            class="det-img"
+                            width="170"
+                            height="30"
+                            src="../assets/images/chart-state-purple.png"
+                          />
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                          <div class="display-flex justify-content-between">
+                            <div class="display-flex">
+                              <p class="light-black">BTC</p>
+                              &nbsp; &nbsp;
+                              <img
+                                src="../assets/images/Icn.png"
+                                height="10"
+                                class="mt-2"
+                              />
+                              &nbsp; &nbsp;
+                              <p class="light-black">IDR</p>
+                            </div>
+                            <div class="display-flex">
+                              <img
+                                src="../assets/images/green-Shape.png"
+                                class="mt-2 mr-2"
+                                height="7"
+                              />
+                              <p class="color-green">+39.69%</p>
+                            </div>
+                          </div>
+                          <p class="light-black bottom-value">107.543,234</p>
+                          <img
+                            class="det-img"
+                            width="170"
+                            height="30"
+                            src="../assets/images/chart-state-purple.png"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 right-parent">
+              <div class="p-4" style="background-color: #f8f7ff">
+                <p class="ppl-cl mt-3 font-bold">Quick Transfer</p>
+                <div class="">
+                  <ul class="nav-toper nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-toper-item nav-item">
+                      <a
+                        class="nav-toper-item-btn nav-link active focus font-bold"
+                        id="send-tab"
+                        data-toggle="tab"
+                        href="#send"
+                        role="tab"
+                        aria-controls="send"
+                        aria-selected="true"
+                        >Send</a
+                      >
+                    </li>
+                    <li class="nav-toper-item nav-item">
+                      <a
+                        class="nav-toper-item-btn nav-link font-bold"
+                        id="recieve-tab"
+                        data-toggle="tab"
+                        href="#recieve"
+                        role="tab"
+                        aria-controls="recieve"
+                        aria-selected="false"
+                        >Recieve</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- TABLE AND TABS -->
+                <div class="tab-content p-0" id="myTabContent">
+                  <!-- FIRST TAB -->
+                  <div
+                    class="tab-pane fade show active"
+                    id="send"
+                    role="tabpanel"
+                    aria-labelledby="send-tab"
+                  >
+                    <div class="mt-3">
+                      <label class="mb-0">How do you want to send?</label>
+                      <select class="select-item">
+                        <option>User to User</option>
+                      </select>
+                    </div>
+
+                    <div class="mt-3">
+                      <label class="mb-0">Select wallet to send from</label>
+                      <select class="select-item">
+                        <option>Bitcoin</option>
+                      </select>
+                    </div>
+
+                    <div class="mt-3">
+                      <div>
+                        <label class="mb-0">Pay to:</label>
+                      </div>
+                      <input
+                        class="input-field"
+                        type="text"
+                        placeholder="Please enter Username or Email"
+                      />
+                    </div>
+
+                    <div class="mt-3">
+                      <div>
+                        <label class="mb-0">Amount:</label>
+                      </div>
+                      <input
+                        class="input-field"
+                        type="text"
+                        placeholder="Please enter amount"
+                      />
+                    </div>
+
+                    <div class="mt-3 d-flex justify-content-between">
+                      <p>Fee: &nbsp; &nbsp; <span>$0.00</span></p>
+                      <p>Total: &nbsp; &nbsp; <span>$0.00</span></p>
+                    </div>
+
+                    <button class="transfer-btn">
+                      <img class="mb-1" src="../assets/images/Fill 1.png" />
+                      &nbsp; Transfer Now
+                    </button>
+                  </div>
+                  <!-- SECOND TAB -->
+                  <div
+                    class="tab-pane fade"
+                    id="recieve"
+                    role="tabpanel"
+                    aria-labelledby="recieve-tab"
+                  >
+                    <div class="mt-3">
+                      <label class="mb-0">How do you want to send?</label>
+                      <select class="select-item">
+                        <option>User to User</option>
+                      </select>
+                    </div>
+
+                    <div class="mt-3">
+                      <label class="mb-0">Select wallet to send from</label>
+                      <select class="select-item">
+                        <option>Bitcoin</option>
+                      </select>
+                    </div>
+
+                    <div class="mt-3">
+                      <div>
+                        <label class="mb-0">Pay to:</label>
+                      </div>
+                      <input
+                        class="input-field"
+                        type="text"
+                        placeholder="Please enter Username or Email"
+                      />
+                    </div>
+
+                    <div class="mt-3">
+                      <div>
+                        <label class="mb-0">Amount:</label>
+                      </div>
+                      <input
+                        class="input-field"
+                        type="text"
+                        placeholder="Please enter amount"
+                      />
+                    </div>
+
+                    <div class="mt-3 d-flex justify-content-between">
+                      <p>Fee: &nbsp; &nbsp; <span>$0.00</span></p>
+                      <p>Total: &nbsp; &nbsp; <span>$0.00</span></p>
+                    </div>
+
+                    <button class="transfer-btn">
+                      <img class="mb-1" src="../assets/images/Fill 1.png" />
+                      &nbsp; Transfer Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="bottom-right-ads-section p-4">
+                <p class="mt-5">ADS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
