@@ -80,9 +80,9 @@ a, p, h1, h2, h3, h4, h5, h6, span, input, label, button, li, th, td {
 }
 
 .sidenav-text {
-    font-style: normal;
+    font-family: font-light !important;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
     align-items: center;
     text-align: right;
@@ -187,7 +187,7 @@ img.top-pattern {
     background: #F8F7FF;
     border-radius: 25px;
     font-style: normal;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
 }
 
@@ -259,11 +259,11 @@ img.top-pattern {
 }
 
 .purple-card {
-    background-color: #8568C6;
-    padding: 10px;
-    border-radius: 5px;
-    width: 25% !important;
-    height: 150px;
+    /* background-color: #8568C6; */
+    background-image: linear-gradient(to bottom right, #A088D2, #8568C6);
+    padding: 15px 21px;
+    border-radius: 10px;
+    /* width: 30% !important; */
     margin: 5px 5px 5px 0px;
 }
 
@@ -283,8 +283,28 @@ img.top-pattern {
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
-    white-space: nowrap; */
+    white-space: nowrap; 
+    display: flex;*/
+}
+.horizontal-scroll > .row {
     display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.horizontal-scroll > .row > .col-lg-4 {
+    flex: 0 0 auto;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: transparent;
 }
 
 .grey-card-2 {
@@ -300,11 +320,10 @@ img.top-pattern {
 .grey-card {
     border: 1px solid #9381FF;
     background: #F8F7FF;
-    padding: 10px;
-    border-radius: 5px;
-    width: 25% !important;
-    height: 150px;
-    margin: 5px;
+    padding: 15px 21px;
+    border-radius: 10px;
+    /* width: 30% !important; */
+   margin: 5px;
 }
 
 table {
@@ -312,9 +331,8 @@ table {
     color: white !important;
     background-color: #8568C6;
     border-radius: 5px;
-    padding: 5px !important;
-
 }
+
 
 thead {
     border-bottom: 1px solid white;
@@ -340,6 +358,8 @@ thead {
     margin-top: 2rem;
     text-align: center;
 }
+
+
 
 .dash-btn-setion {
     background-color: white;
@@ -718,6 +738,27 @@ thead {
     border: none !important;
 }
 
+#th{
+    font-family: font-light !important;
+}
+
+::-webkit-input-placeholder {
+    font-size: 13px;
+    font-family: "font-light" !important;
+    color: #8692A6;
+}
+::-moz-placeholder {
+    font-size: 13x;
+    font-family: "font-light" !important;
+    color: #8692A6;
+   
+}
+::-ms-input-placeholder {
+    font-size: 13px;
+    font-family: "font-light" !important;
+    color: #8692A6;
+}
+
 .set-tab-content {
     border-top: 2px solid #dee2e6;
     margin-top: 10px;
@@ -804,9 +845,10 @@ thead {
 
 
 .nav-toper {
-    background-color: white !important;
-    padding: 5px 5px 3px 10px !important;
-    box-shadow: 0px 1px 16px rgba(27, 39, 51, 0.08) !important;
+    background-color: #fff !important;
+    border: 1px solid #dee2e6;
+    padding: 5px 5px !important;
+    border-radius: 5px;
 }
 
 .nav-toper-item-btn {
@@ -826,10 +868,7 @@ thead {
     width: 100%;
     padding: 5px;
     border: none !important;
-    border-top-left-radius: 5px !important;
-    border-top-right-radius: 5px !important;
-    border-bottom-left-radius: 5px !important;
-    border-bottom-right-radius: 5px !important;
+   border-radius: 6px !important;
 }
 
 .remove-btn {
