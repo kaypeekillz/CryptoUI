@@ -601,12 +601,12 @@ thead {
     position: relative;
 }
 
-.date-section {
+/* .date-section {
     height: 20px;
     bottom: 25px; 
     position: absolute; 
-    right: 0px;
-}
+  
+} */
 
 .each-radio {
     padding: 10px;
