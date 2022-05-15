@@ -1,430 +1,806 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Crypto</title>
-        <link rel="stylesheet" href="../css/dashboard-style.css" />
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
-            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
-            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <head>
+    <title>Crypto</title>
+    <link rel="icon" href="../assets/images/favicon.jpg" />
+    <link rel="stylesheet" href="../css/dashboard-style.css" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
 
-    </head>
-    <body> 
-        <div class="main-content">
-            <nav class="sidenav nav-sidebar">
-                <div class="sticky-top logo-section">
-                    <img src="../assets/images/logo-purple.png" class="logo" width="150" height="50"/>
-                    <img src="../assets/images/Menu_Alt_01.jpg" class="logo-menu mt-2" height="30"/>
-                </div>
-                <ul class="sidenav-menu">
-                    <div class="main-menu">
-                        <div>
-                            <li class="sidenav-menu-item pointer" href="">
-                                <a class="sidenav-link" href="dashboard-home.html">
-                                    <img src="../assets/images/Home.png" class="icon-main"/>                          
-                                    <img src="../assets/images/Home-hover.jpg" class="icon-hover"/>                          
-                                    <span class="ml-3 sidenav-text ">Home</span>
-                                </a>
-                            </li>
-                            <li class="sidenav-menu-item pointer">
-                                <a class="sidenav-link" href="fiat-wallet.html">
-                                    <img src="../assets/images/fiat-wallet.png" class="icon-main"/>                          
-                                    <img src="../assets/images/fiat-wallet-hover.png" class="icon-hover"/> 
-                                    <span class="ml-3 sidenav-text ">Fiat Wallet</span>
-                                </a>
-                            </li>
-                            <li class="sidenav-menu-item pointer">
-                                <a class="sidenav-link" href="crypto-wallet.html">
-                                    <img src="../assets/images/fiat-wallet.png" class="icon-main"/>                          
-                                    <img src="../assets/images/fiat-wallet-hover.png" class="icon-hover"/>  
-                                    <span class="ml-3 sidenav-text ">Crypto Wallet</span>
-                                </a>
-                            </li>
-                            <li class="sidenav-menu-item pointer">
-                                <a class="sidenav-link" href="transactions.html">
-                                    <img src="../assets/images/Credit_Card_01.jpg" class="icon-main"/>                          
-                                    <img src="../assets/images/Credit_Card_01-hover.jpg" class="icon-hover"/> 
-                                    <span class="ml-3 sidenav-text ">Transactions</span>
-                                </a>
-                            </li>
-                            <li class="sidenav-menu-item pointer">
-                                <a class="sidenav-link" href="user-to-user.html">
-                                    <img src="../assets/images/Swap.png" class="icon-main" height="20"/>                          
-                                    <img src="../assets/images/Swap-hover.png" class="icon-hover"/> 
-                                    <span class="ml-3 sidenav-text ">User to User</span>
-                                </a>
-                            </li>
-                            <li class="sidenav-menu-item pointer">
-                                <a class="sidenav-link" href="refill.html">
-                                    <img src="../assets/images/Activity.png" class="icon-main"/>                          
-                                    <img src="../assets/images/Activity-hover.png" class="icon-hover"/> 
-                                    <span class="ml-3 sidenav-text ">Refill</span>
-                                </a>
-                            </li>
-                            <li class="sidenav-menu-item pointer">
-                                <a class="sidenav-link" href="loan.html">
-                                    <img src="../assets/images/loan.png" class="icon-main"/>                          
-                                    <img src="../assets/images/loan-hover.png" class="icon-hover"/>                                 
-                                    <span class="ml-3 sidenav-text ">Loan</span>
-                                </a>
-                            </li>
-        
-                            <li style="margin-top: 50px;" class="sidenav-menu-item pointer active">
-                                <a class="sidenav-link" href="settings.html">
-                                    <img src="../assets/images/Setting.png" class="icon-main"/>                          
-                                    <img src="../assets/images/Setting-hover.png" class="icon-hover"/>                                                                 
-                                    <span class="ml-3 sidenav-text ">Settings</span>
-                                </a>
-                            </li>
-        
-                            <li class="sidenav-menu-item pointer">
-                                <a class="sidenav-link" href="user.html">
-                                    <img src="../assets/images/user.png" height="20" class="icon-main"/>                          
-                                    <img src="../assets/images/user-active.png" height="20" class="icon-hover"/>                
-                                    <span class="ml-3 sidenav-text ">User</span>
-                                </a>
-                            </li>
-        
-                            <li class="sidenav-menu-item pointer">
-                                <a class="sidenav-link" href="contact.html">
-                                    <img src="../assets/images/contact-us.png" class="icon-main"/>                          
-                                    <img src="../assets/images/contact-active.png" class="icon-hover"/>                                              
-                                    <span class="ml-3 sidenav-text ">Contact Us</span>
-                                </a>
-                            </li>
-                        </div>
-                    </div>
-                </ul>
-            </nav>
-        
-            <div class="page">
-                <nav class="navbar navbar-expand-md main-nav sticky-top">
-                    <div class="container-fluid justify-content-between mx-md-3 py-2 pr-0">
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <div class="flex-container ml-auto flex-end navbar-nav">
-                                <div>
-                                    <div class="align-self-center d-flex" role="button" id="dropdownMenuLinkApp" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <img src="../assets/images/notification btn.png" height="20" class="pointer mt-2"/> &nbsp; &nbsp;
-                                        <img src="../assets/images/Face.png" height="20" class="pointer mt-2"/> &nbsp; &nbsp; 
-                                        <h4 class="pointer name-text mt-2" style="color: #6F6C99;">
-                                            Angie Kem <img src="../assets/images/Down Arrow.jpg" height="7" width="10"/>
-                                        </h4> &nbsp;
-                                    </div>
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLinkApp">
-                                        <p class="pointer font-bold mb-0 text-center">
-                                            <img src="../assets/images/Log_Out.jpg"/> Log Out
-                                        </p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-                <div class="page-content">
-                    <div>
-                        <p class="color-grey">Hello Angela,</p>
-                    </div>
-                   
-                    <div class="user-main-content">
-                        <div class="">
-                            <div class="">
-                                <ul class="nav nav-tabs tab-set" id="myTab" role="tablist">
-                                    <li class="nav-item-2">
-                                        <a class="nav-link-2 active focus font-bold pl-5 pr-5" id="account-tab" data-toggle="tab" href="#account" role="tab" aria-controls="account" aria-selected="true">Bank Account</a>
-                                    </li>
-                                    <li class="nav-item-2">
-                                        <a class="nav-link-2 font-bold pl-5 pr-5" id="notification-tab" data-toggle="tab" href="#notification" role="tab" aria-controls="notification" aria-selected="false">Notification</a>
-                                    </li>
-
-                                    <li class="nav-item-2">
-                                        <a class="nav-link-2 font-bold pl-5 pr-5" id="security-tab" data-toggle="tab" href="#security" role="tab" aria-controls="security" aria-selected="true">Security</a>
-                                    </li>
-                                    <li class="nav-item-2">
-                                        <a class="nav-link-2 font-bold pl-5 pr-5" id="verification-tab" data-toggle="tab" href="#verification" role="tab" aria-controls="verification" aria-selected="false">Verification</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- TABLE AND TABS -->
-                            <div class="tab-content set-tab-content" id="myTabContent">
-                                <!-- FIRST TAB -->
-                                <div class="tab-pane fade show active" id="account" role="tabpanel" aria-labelledby="account-tab">
-                                    <div class="card p-4">
-                                        <div class="display-flex display-block-mobile justify-content-between">
-                                            <div>
-                                                <p class="color-grey mb-2">Name</p>
-                                                <p>Angela Ofure</p>
-                                            </div>
-    
-                                            <div>
-                                                <p class="color-grey mb-2">Bank Account Name</p>
-                                                <p>First Bank Of Nigeria</p>
-                                            </div>
-    
-                                            <div>
-                                                <p class="color-grey mb-2">Bank Account Number</p>
-                                                <p>3063756372</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="mt-4">
-                                        <button data-toggle="modal" data-target="#newMsgModal" style="width:150px;" class="transfer-btn">Add Account</button>
-                                    </div>
-                                </div>
-                                <!-- SECOND TAB -->
-                                <div class="tab-pane fade" id="notification" role="tabpanel" aria-labelledby="notification-tab">
-                                    <div>
-                                        <p class="color-purple font-bold">Notification Settings</p>
-                                        <p>In addition to these alerts, we ma send you important information about our products and services.</p>
-
-                                        <hr/>
-
-                                        <div class="pl-5 pt-2 pb-2 pr-5 display-flex display-block-mobile justify-content-between">
-                                            <p>Notification Type</p>
-                                            <p>SMS Notification</p>
-                                            <p>Email Alert</p>
-                                        </div>
-
-                                        <hr/>
-
-                                        <div class="pl-5 pt-2 pb-2 pr-5 display-flex display-block-mobile justify-content-between">
-                                            <p>Send or Receive Funds</p>
-                                            <label class="switch">
-                                                <input type="checkbox">
-                                                <span class="slider"></span>
-                                            </label>
-                                            <label class="switch">
-                                                <input type="checkbox">
-                                                <span class="slider"></span>
-                                            </label>
-                                        </div>
-
-                                        <hr/>
-
-                                        <div class="pl-5 pt-2 pb-2 pr-5 display-flex display-block-mobile justify-content-between">
-                                            <p>Buy or sell</p>
-                                            <label class="switch">
-                                                <input type="checkbox">
-                                                <span class="slider"></span>
-                                            </label>
-                                            <label class="switch">
-                                                <input type="checkbox">
-                                                <span class="slider"></span>
-                                            </label>
-                                        </div>
-
-                                        <hr/>
-
-                                        <div class="pl-5 pt-2 pb-2 pr-5 display-flex display-block-mobile justify-content-between">
-                                            <p>Newsletter</p>
-                                            <label class="switch">
-                                                <input type="checkbox">
-                                                <span class="slider"></span>
-                                            </label>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- THIRD TAB -->
-                                <div class="tab-pane fade" id="security" role="tabpanel" aria-labelledby="security-tab">
-                                    <div class="card p-4">
-                                        <div>
-                                            <p class="font-bold">Reset Password</p>
-                                            <p>To sign in, Your password is required</p>
-                                        </div>
-
-                                        <div>
-                                            <button style="width:150px;" class="transfer-btn" data-toggle="modal" data-target="#changePassModal">Reset Password</button>
-                                        </div>
-                                    </div>
-
-                                    <div class="card p-4 mt-4">
-                                        <div>
-                                            <p class="font-bold">2 Factor Authentication</p>
-                                            <p>2 Factor authentication is a double layer security measure to ensure the safetyof your account.</p>
-                                        </div>
-
-                                        <div>
-                                            <button data-toggle="modal" data-target="#twoFactorModal" style="width:150px;" class="transfer-btn">Enable</button>
-                                        </div>
-                                    </div>
-
-                                    <div class="card p-4 mt-4">
-                                        <div>
-                                            <p class="font-bold">Delete Account</p>
-                                            <p>We do out best to give you a great experience. We’ll be sad to see you leave.</p>
-                                        </div>
-
-                                        <div>
-                                            <button data-toggle="modal" data-target="#deleteAcctModal" style="width:150px;" class="transfer-btn">Delete Account</button>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!-- FOURTH TAB -->
-                                <div class="tab-pane fade" id="verification" role="tabpanel" aria-labelledby="verification-tab">
-                                    <div class="card p-4">
-                                        <p class="font-bold">Account Upgrade</p>
-                                        <div class="display-flex display-flex-tabs">
-                                            <div>
-                                                <div>
-                                                    <img src="../assets/images/dot.png"/>
-                                                </div>
-                                                <div class="ml-2 mt-2 mb-2">
-                                                    <img src="../assets/images/lines-dot.png"/>
-                                                </div>
-                                               <div>
-                                                <img src="../assets/images/dot-open.png"/>
-                                               </div>
-                                            </div>
-
-                                            <div class="ml-4">
-                                                <div>
-                                                    <div class="display-flex display-flex-tabs">
-                                                        <p class="mb-2">Email Verification</p> &nbsp; &nbsp;
-                                                        <img src="../assets/images/Wavy_Check-purple.jpg" height="20"/>
-                                                    </div>
-                                                    <p class="color-grey">
-                                                        Your Email adress has been verified. your one-time and daily <br/>
-                                                        transaction limit is N1,000.00 and n1,000.00 respectively
-                                                    </p>    
-                                                </div>
-
-                                                <div class="verify-col">
-                                                    <div class="display-flex display-flex-tabs">
-                                                        <p class="mb-2">BVN Verification</p> &nbsp; &nbsp;
-                                                        <img src="../assets/images/Wavy_Check.jpg" height="20"/>
-                                                    </div>
-                                                    <p class="color-grey">
-                                                        Add your BVN number to increase your daily transaction <br/> limit.
-                                                    </p>    
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="display-flex-tabs display-flex justify-content-between display-block-mobile mt-5 ml-5">
-                                            <div>
-                                                <p class="pointer text-underline color-purple-deep check-bvn">how to check your BVN</p>
-                                            </div>
-    
-                                            <div>
-                                                <button style="width:150px;" class="transfer-btn mt-0">Update BVN</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <style>
+      p {
+        font-family: font-regular !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-content">
+      <nav class="sidenav nav-sidebar shadow-sm" style="background-color: #fff">
+        <div class="sticky-top logo-section">
+          <img
+            src="../assets/images/logo-purple.png"
+            class="logo"
+            width="150"
+            height="50"
+          />
+          <img
+            src="../assets/images/menu.svg"
+            class="logo-menu mt-2"
+            height="30"
+          />
         </div>
-    </body>
+        <ul class="sidenav-menu">
+          <div class="main-menu">
+            <div>
+              <li class="sidenav-menu-item pointer" href="">
+                <a class="sidenav-link" href="dashboard-home.html">
+                  <img src="../assets/images/home.svg" class="icon-main" />
+                  <img
+                    src="../assets/images/home-hover.svg"
+                    class="icon-hover"
+                  />
+                  <span class="ml-3 sidenav-text">Home</span>
+                </a>
+              </li>
+              <li class="sidenav-menu-item pointer">
+                <a class="sidenav-link" href="fiat-wallet.html">
+                  <img src="../assets/images/wallet.svg" class="icon-main" />
+                  <img
+                    src="../assets/images/wallet-hover.svg"
+                    class="icon-hover"
+                  />
+                  <span class="ml-3 sidenav-text">Fiat Wallet</span>
+                </a>
+              </li>
+              <li class="sidenav-menu-item pointer">
+                <a class="sidenav-link" href="crypto-wallet.html">
+                  <img src="../assets/images/wallet.svg" class="icon-main" />
+                  <img
+                    src="../assets/images/wallet-hover.svg"
+                    class="icon-hover"
+                  />
+                  <span class="ml-3 sidenav-text">Crypto Wallet</span>
+                </a>
+              </li>
+              <li class="sidenav-menu-item pointer">
+                <a class="sidenav-link" href="transactions.html">
+                  <img
+                    src="../assets/images/transaction.svg"
+                    class="icon-main"
+                  />
+                  <img
+                    src="../assets/images/transaction-hover.svg"
+                    class="icon-hover"
+                  />
+                  <span class="ml-3 sidenav-text">Transactions</span>
+                </a>
+              </li>
+              <li class="sidenav-menu-item pointer">
+                <a class="sidenav-link" href="user-to-user.html">
+                  <img
+                    src="../assets/images/user-to-user.svg"
+                    class="icon-main"
+                    height="20"
+                  />
+                  <img
+                    src="../assets/images/user-to-user-hover.svg"
+                    class="icon-hover"
+                  />
+                  <span class="ml-3 sidenav-text">User to User</span>
+                </a>
+              </li>
+              <li class="sidenav-menu-item pointer">
+                <a class="sidenav-link" href="refill.html">
+                  <img src="../assets/images/refil.svg" class="icon-main" />
+                  <img
+                    src="../assets/images/refil-hover.svg"
+                    class="icon-hover"
+                  />
+                  <span class="ml-3 sidenav-text">Refill</span>
+                </a>
+              </li>
+              <li class="sidenav-menu-item pointer">
+                <a class="sidenav-link" href="loan.html">
+                  <img src="../assets/images/loan.svg" class="icon-main" />
+                  <img
+                    src="../assets/images/loan-hover.svg"
+                    class="icon-hover"
+                  />
+                  <span class="ml-3 sidenav-text">Loan</span>
+                </a>
+              </li>
+
+              <li
+                style="margin-top: 50px"
+                class="sidenav-menu-item pointer active"
+              >
+                <a class="sidenav-link" href="settings.html">
+                  <img src="../assets/images/setting.svg" class="icon-main" />
+                  <img
+                    src="../assets/images/setting-hover.svg"
+                    class="icon-hover"
+                  />
+                  <span class="ml-3 sidenav-text">Settings</span>
+                </a>
+              </li>
+
+              <li class="sidenav-menu-item pointer">
+                <a class="sidenav-link" href="user.html">
+                  <img
+                    src="../assets/images/users.svg"
+                    height="20"
+                    class="icon-main"
+                  />
+                  <img
+                    src="../assets/images/users-hover.svg"
+                    height="20"
+                    class="icon-hover"
+                  />
+                  <span class="ml-3 sidenav-text">User</span>
+                </a>
+              </li>
+
+              <li class="sidenav-menu-item pointer">
+                <a class="sidenav-link" href="contact.html">
+                  <img src="../assets/images/contact.svg" class="icon-main" />
+                  <img
+                    src="../assets/images/contact-hover.svg"
+                    class="icon-hover"
+                  />
+                  <span class="ml-3 sidenav-text">Contact Us</span>
+                </a>
+              </li>
+            </div>
+          </div>
+        </ul>
+      </nav>
+
+      <div class="page">
+        <nav class="navbar navbar-expand-md main-nav sticky-top">
+          <div
+            class="container-fluid justify-content-between mx-md-3 py-2 pr-0"
+          >
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="flex-container ml-auto flex-end navbar-nav">
+                <div>
+                  <div
+                    class="align-self-center d-flex"
+                    role="button"
+                    id="dropdownMenuLinkApp"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="../assets/images/notification-btn.svg"
+                      class="pointer mt-2"
+                      style="max-height: 30px"
+                    />
+                    &nbsp; &nbsp;
+                    <img
+                      src="../assets/images/staff4.png"
+                      style="max-height: 30px; border-radius: 4px"
+                      class="pointer mt-2"
+                    />
+                    &nbsp; &nbsp;
+                    <h4
+                      class="pointer font-medium name-text mt-2"
+                      style="color: #6f6c99"
+                    >
+                      Angie Kem
+                      <img src="../assets/images/arrow-down.svg" />
+                    </h4>
+                    &nbsp;
+                  </div>
+                  <div
+                    class="dropdown-menu dropdown-menu-right"
+                    aria-labelledby="dropdownMenuLinkApp"
+                  >
+                    <p
+                      class="pointer font-medium mb-0 text-center"
+                      style="font-size: 15px"
+                    >
+                      <img
+                        src="../assets/images/logout.png"
+                        style="max-height: 20px"
+                      />
+                      &nbsp; Log Out
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="page-content">
+          <div>
+            <p class="color-grey font-light">Hello Angela,</p>
+          </div>
+
+          <div class="user-main-content">
+            <div class="">
+              <div class="">
+                <ul class="nav nav-tabs tab-set" id="myTab" role="tablist">
+                  <li class="nav-item-2">
+                    <a
+                      class="nav-link-2 active focus font-regular pl-5 pr-5"
+                      id="account-tab"
+                      data-toggle="tab"
+                      href="#account"
+                      role="tab"
+                      aria-controls="account"
+                      aria-selected="true"
+                      >Bank Account</a
+                    >
+                  </li>
+                  <li class="nav-item-2">
+                    <a
+                      class="nav-link-2 font-bold pl-5 pr-5 font-regular"
+                      id="notification-tab"
+                      data-toggle="tab"
+                      href="#notification"
+                      role="tab"
+                      aria-controls="notification"
+                      aria-selected="false"
+                      >Notification</a
+                    >
+                  </li>
+
+                  <li class="nav-item-2">
+                    <a
+                      class="nav-link-2 font-bold pl-5 pr-5 font-regular"
+                      id="security-tab"
+                      data-toggle="tab"
+                      href="#security"
+                      role="tab"
+                      aria-controls="security"
+                      aria-selected="true"
+                      >Security</a
+                    >
+                  </li>
+                  <li class="nav-item-2">
+                    <a
+                      class="nav-link-2 font-bold pl-5 pr-5 font-regular"
+                      id="verification-tab"
+                      data-toggle="tab"
+                      href="#verification"
+                      role="tab"
+                      aria-controls="verification"
+                      aria-selected="false"
+                      >Verification</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- TABLE AND TABS -->
+              <div class="tab-content set-tab-content" id="myTabContent">
+                <!-- FIRST TAB -->
+                <div
+                  class="tab-pane fade show active"
+                  id="account"
+                  role="tabpanel"
+                  aria-labelledby="account-tab"
+                >
+                  <div class="card p-4 shadow-sm">
+                    <div
+                      class="display-flex display-block-mobile justify-content-between"
+                    >
+                      <div>
+                        <p class="color-grey mb-2 font-regular">Name</p>
+                        <p class="font-regular">Angela Ofure</p>
+                      </div>
+
+                      <div>
+                        <p class="color-grey mb-2 font-regular">
+                          Bank Account Name
+                        </p>
+                        <p class="font-regular">First Bank Of Nigeria</p>
+                      </div>
+
+                      <div>
+                        <p class="color-grey mb-2 font-regular">
+                          Bank Account Number
+                        </p>
+                        <p class="font-regular">3063756372</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-4">
+                    <button
+                      data-toggle="modal"
+                      data-target="#newMsgModal"
+                      style="width: 170px; font-size: 16px"
+                      class="transfer-btn font-light"
+                    >
+                      Add Account
+                    </button>
+                  </div>
+                </div>
+                <!-- SECOND TAB -->
+                <div
+                  class="tab-pane fade"
+                  id="notification"
+                  role="tabpanel"
+                  aria-labelledby="notification-tab"
+                >
+                  <div>
+                    <p class="color-purple font-medium" style="font-size: 20px">
+                      Notification Settings
+                    </p>
+                    <p class="font-light">
+                      In addition to these alerts, we ma send you important
+                      information about our products and services.
+                    </p>
+
+                    <hr />
+
+                    <div
+                      class="pl-5 pt-2 pb-2 pr-5 display-flex display-block-mobile justify-content-between"
+                    >
+                      <p>Notification Type</p>
+                      <p>SMS Notification</p>
+                      <p>Email Alert</p>
+                    </div>
+
+                    <hr />
+
+                    <div
+                      class="pl-5 pt-2 pb-2 pr-5 display-flex display-block-mobile justify-content-between row"
+                    >
+                      <div class="col-lg-4">
+                        <p>Send or receive funds</p>
+                      </div>
+                      <div class="col-lg-4 text-center">
+                        <label class="switch">
+                          <input type="checkbox" />
+                          <span class="slider"></span>
+                        </label>
+                      </div>
+                      <div class="col-lg-4 text-right">
+                        <label class="switch">
+                          <input type="checkbox" />
+                          <span class="slider"></span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <hr />
+
+                    <div
+                      class="pl-5 pt-2 pb-2 pr-5 display-flex display-block-mobile justify-content-between row"
+                    >
+                      <div class="col-lg-4">
+                        <p>Buy or Sell</p>
+                      </div>
+                      <div class="col-lg-4 text-center">
+                        <label class="switch">
+                          <input type="checkbox" />
+                          <span class="slider"></span>
+                        </label>
+                      </div>
+                      <div class="col-lg-4 text-right">
+                        <label class="switch">
+                          <input type="checkbox" />
+                          <span class="slider"></span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <hr />
+
+                    <div
+                      class="pl-5 pt-2 pb-2 pr-5 display-flex display-block-mobile justify-content-between row"
+                    >
+                      <div class="col-lg-4">
+                        <p>Newsletter</p>
+                      </div>
+                      <div class="col-lg-4 text-center"></div>
+                      <div class="col-lg-4 text-right">
+                        <label class="switch">
+                          <input type="checkbox" />
+                          <span class="slider"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- THIRD TAB -->
+                <div
+                  class="tab-pane fade"
+                  id="security"
+                  role="tabpanel"
+                  aria-labelledby="security-tab"
+                >
+                  <div class="card p-4">
+                    <div>
+                      <p class="font-medium" style="font-size: 20px">
+                        Reset Password
+                      </p>
+                      <p class="font-light">
+                        To sign in, Your password is required
+                      </p>
+                    </div>
+
+                    <div>
+                      <button
+                        style="width: 150px; font-size: 16px"
+                        class="transfer-btn font-light"
+                        data-toggle="modal"
+                        data-target="#changePassModal"
+                      >
+                        Reset Password
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card p-4 mt-4">
+                    <div>
+                      <p class="font-medium" style="font-size: 20px">
+                        2 Factor Authentication
+                      </p>
+                      <p class="font-light">
+                        2 Factor authentication is a double layer security
+                        measure to ensure the safetyof your account.
+                      </p>
+                    </div>
+
+                    <div>
+                      <button
+                        data-toggle="modal"
+                        data-target="#twoFactorModal"
+                        style="width: 150px; font-size: 16px"
+                        class="transfer-btn font-light"
+                      >
+                        Enable
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card p-4 mt-4">
+                    <div>
+                      <p class="font-medium" style="font-size: 20px">
+                        Delete Account
+                      </p>
+                      <p class="font-light">
+                        We do out best to give you a great experience. We’ll be
+                        sad to see you leave.
+                      </p>
+                    </div>
+
+                    <div>
+                      <button
+                        data-toggle="modal"
+                        data-target="#deleteAcctModal"
+                        style="width: 150px; font-size: 16px"
+                        class="transfer-btn font-light"
+                      >
+                        Delete Account
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- FOURTH TAB -->
+                <div
+                  class="tab-pane fade"
+                  id="verification"
+                  role="tabpanel"
+                  aria-labelledby="verification-tab"
+                >
+                  <div class="card p-4">
+                    <p class="font-bold">Account Upgrade</p>
+                    <div class="display-flex display-flex-tabs mt-2">
+                      <div>
+                        <div>
+                          <img src="../assets/images/dot.png" />
+                        </div>
+                        <div class="ml-2 mt-2 mb-2">
+                          <img src="../assets/images/lines-dot.png" />
+                        </div>
+                        <div>
+                          <img src="../assets/images/dot-open.png" />
+                        </div>
+                      </div>
+
+                      <div class="ml-4">
+                        <div>
+                          <div class="display-flex display-flex-tabs">
+                            <p class="mb-2">Email Verification</p>
+                            &nbsp; &nbsp;
+                            <img
+                              src="../assets/images/wavy-purple-check.svg"
+                              height="20"
+                            />
+                          </div>
+                          <p class="color-grey font-light">
+                            Your Email adress has been verified. your one-time
+                            and daily <br />
+                            transaction limit is N1,000.00 and n1,000.00
+                            respectively
+                          </p>
+                        </div>
+
+                        <div class="verify-col">
+                          <div class="display-flex display-flex-tabs">
+                            <p class="mb-2">BVN Verification</p>
+                            &nbsp; &nbsp;
+                            <img
+                              src="../assets/images/wavy-check.svg"
+                              height="20"
+                            />
+                          </div>
+                          <p class="color-grey">
+                            Add your BVN number to increase your daily
+                            transaction <br />
+                            limit.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="display-flex-tabs display-flex justify-content-between display-block-mobile mt-5 ml-5"
+                    >
+                      <div>
+                        <!-- <p
+                          class="pointer text-underline color-purple-deep check-bvn"
+                        >
+                          how to check your BVN
+                        </p> -->
+                      </div>
+
+                      <div>
+                        <button
+                          style="width: 150px"
+                          class="transfer-btn mt-0 font-light"
+                        >
+                          Update BVN
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
 
-
-<div class="modal fade" id="newMsgModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="card p-4">
-                <div>
-                    <div>
-                        <p class="font-bold">Enter Account Name</p>
-                        <input class="input-field" style=" background-color: white;"/>
-                    </div>
-                    <div class="mt-4">
-                        <p class="font-bold">Enter Bank Name</p>
-                        <input class="input-field" style=" background-color: white;"/>
-                    </div>
-                    <div class="mt-4">
-                        <p class="font-bold">Enter Account Number</p>
-                        <input class="input-field" style=" background-color: white;"/>
-                    </div>
-                    <button class="transfer-btn mt-4" style="width: 150px;">Save</button>
-                </div>
-            </div>
+<div
+  class="modal fade"
+  id="newMsgModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="card p-4">
+        <div>
+          <div>
+            <label class="font-regular" style="font-size: 16px; color: #282828"
+              >Enter Account Name</label
+            >
+            <input
+              class="input-field font-regular"
+              type="text"
+              style="font-size: 14px"
+            />
+          </div>
+          <div class="mt-4">
+            <label class="font-regular" style="font-size: 16px; color: #282828"
+              >Enter Bank Name</label
+            >
+            <input
+              class="input-field font-regular"
+              type="text"
+              style="font-size: 14px"
+            />
+          </div>
+          <div class="mt-4">
+            <label class="font-regular" style="font-size: 16px; color: #282828"
+              >Enter Account Number</label
+            >
+            <input
+              class="input-field font-regular"
+              type="text"
+              style="font-size: 14px"
+            />
+          </div>
+          <button
+            class="transfer-btn mt-4 font-light"
+            style="width: 150px; font-size: 16px"
+          >
+            Save
+          </button>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 
-<div class="modal fade" id="changePassModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="card p-4">
-                <div>
-                    <h4 class="font-bold text-center color-purple mb-4">Change Password</h4>
-                    <div>
-                        <p class="font-bold">Old Password</p>
-                        <input class="input-field" style=" background-color: white;"/>
-                    </div>
-                    <div class="mt-4">
-                        <p class="font-bold">New Password</p>
-                        <input class="input-field" style=" background-color: white;"/>
-                    </div>
-                    <p style="color: #9A97AA;">
-                        Must contain atleast 8 characters, one uppercase, one lowercase and one number or special character
-                    </p>
-                    <div class="mt-4">
-                        <p class="font-bold">Re-Enter New Password</p>
-                        <input class="input-field" style=" background-color: white;"/>
-                    </div>
-                    <div class="d-flex justify-content-center mt-4">
-                        <button class="transfer-btn" style="width: 150px;">Save</button> &nbsp; &nbsp;
-                        <button data-dismiss="modal" aria-label="Close" id="closeDelete" class="transfer-btn-white" style="width: 150px;">Close</button>
-                    </div>
-                </div>
+<div
+  class="modal fade"
+  id="changePassModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="card p-4">
+        <div>
+          <h4
+            class="font-medium text-center color-purple mb-4"
+            style="font-size: 20px"
+          >
+            Change Password
+          </h4>
+          <div>
+            <div>
+              <label
+                class="mb-0 font-regular"
+                style="font-size: 16px; color: #282828"
+                >Old Password</label
+              >
             </div>
+            <input
+              class="input-field"
+              type="text"
+              style="font-size: 14px; background-color: #fff"
+            />
+          </div>
+          <div class="mt-4">
+            <div>
+              <label
+                class="mb-0 font-regular"
+                style="font-size: 16px; color: #282828"
+                >New Password</label
+              >
+            </div>
+            <input
+              class="input-field"
+              type="text"
+              style="font-size: 14px; background-color: #fff"
+            />
+          </div>
+          <p style="color: #9a97aa">
+            <small class="font-light"
+              >Must contain atleast 8 characters, one uppercase, one lowercase
+              and one number or special character</small
+            >
+          </p>
+          <div class="mt-4">
+            <div>
+              <label
+                class="mb-0 font-regular"
+                style="font-size: 16px; color: #282828"
+                >Re-Enter New Password</label
+              >
+            </div>
+            <input
+              class="input-field"
+              type="text"
+              style="font-size: 14px; background-color: #fff"
+            />
+          </div>
+          <div class="d-flex justify-content-center mt-4">
+            <button class="transfer-btn font-light" style="width: 150px">
+              Save <img src="../assets/images/check.svg" />
+            </button>
+            &nbsp; &nbsp;
+            <button
+              data-dismiss="modal"
+              aria-label="Close"
+              id="closeDelete"
+              class="transfer-btn-white font-light"
+              style="width: 150px; border: 1px solid purple"
+            >
+              Close <img src="../assets/images/times.svg" />
+            </button>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 
+<div
+  class="modal fade"
+  id="twoFactorModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="card p-4">
+        <p class="text-center"><img src="../assets/images/lock-guard.svg" /></p>
+        <p class="text-center font-medium" style="font-size: 20px">
+          Please set up two factor <br />
+          authentication to proceed
+        </p>
 
-<div class="modal fade" id="twoFactorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="card p-4">
-                <p class="text-center"><img src="../assets/images/two-factor.png"/></p>
-                <p class="text-center font-bold">Please set up two factor <br/> authentication to proceed</p>
+        <p class="text-center font-light">
+          2 factor authentication is an additional security layer for <br />
+          under identity confirmation and this required for all <br />
+          transactions
+        </p>
 
-                <p class="text-center">
-                    2 factor authentication is an additional security layer for <br/>
-                    uder identity confirmation and this required for all <br/>
-                    transactions
-                </p>
+        <p class="text-center mt-1 font-light">
+          To set up 2 factor authentication, please click “get <br />
+          started” below and follow the instructions carefully.
+        </p>
 
-                <p class="text-center">
-                    To set up 2 factor authentication, please click “get <br/> started” below and follow the instructions carefully.
-                </p>
-
-                <div class="d-flex justify-content-center mt-4">
-                    <button class="transfer-btn" style="width: 150px;">Save</button>
-                </div>
-            </div>
+        <div class="d-flex justify-content-center mt-4">
+          <button
+            class="transfer-btn font-light"
+            style="width: 150px; font-size: 16px"
+          >
+            Get Started
+          </button>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 
+<div
+  class="modal fade"
+  id="deleteAcctModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="card p-4">
+        <p class="text-center">
+          <img src="../assets/images/octagon.svg" />
+        </p>
+        <p class="text-center font-medium">Are you sure?</p>
 
-<div class="modal fade" id="deleteAcctModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="card p-4">
-                <p class="text-center"><img src="../assets/images/Octagon_Warning.jpg"/></p>
-                <p class="text-center font-bold">Are you sure?</p>
+        <p class="text-center font-light">
+          You will be able to contact our support to re-activate <br />
+          your account only within 30 days
+        </p>
 
-                <p class="text-center">
-                    You will be able to contact our support to re-activate <br/>
-                    your account only within 30 days
-                </p>
-
-                <div class="d-flex justify-content-center mt-4">
-                    <button class="transfer-btn" style="width: 150px;">Yes, Delete it</button> &nbsp; &nbsp;
-                    <button data-dismiss="modal" aria-label="Close" id="closeDelete" class="transfer-btn-white" style="width: 150px;">Cancel</button>
-                </div>
-            </div>
+        <div class="d-flex justify-content-center mt-4 font-light">
+          <button class="transfer-btn" style="width: 150px; font-size: 16px">
+            Yes, Delete it
+          </button>
+          &nbsp; &nbsp;
+          <button
+            data-dismiss="modal"
+            aria-label="Close"
+            id="closeDelete"
+            class="transfer-btn-white font-light"
+            style="width: 150px; font-size: 16px"
+          >
+            Cancel
+          </button>
         </div>
+      </div>
     </div>
+  </div>
 </div>

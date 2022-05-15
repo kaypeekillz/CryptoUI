@@ -1,61 +1,136 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Crypto</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
-            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
-            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
-            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
-    </head>
-    <body> 
-        <div class="w-100 height-100 display-flex main">
-            <div class="bg-purple height-100 width-50 laptop-section">
-                <a href="home.html">
-                    <img class="m-4 navbar-brand" alt="crypto-logo" width="180" height="80" src="assets/images/logo.png"/>
-                </a>
-                <img class="d-flex laptop-img" style="margin: auto;" src="./assets/images/laptop-crypto.png" width="450" height="450"/>
-                <p class="m-4 white pt-5 font-bold">Continue trading on STACKPAL and get the best value on your assests.</p>
+  <head>
+    <title>Crypto Without Border - STACKPAL</title>
+    <link rel="icon" href="./assets/images/favicon.jpg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="w-100 height-100 display-flex main">
+      <div class="bg-purple height-100 width-50 laptop-section">
+        <a href="home.html">
+          <img
+            class="m-4 navbar-brand"
+            alt="crypto-logo"
+            style="max-height: 80px"
+            src="assets/images/logo.png"
+          />
+        </a>
+        <img
+          class="d-flex laptop-img"
+          style="margin: auto"
+          src="./assets/images/laptop-crypto.png"
+          width="450"
+          height="450"
+        />
+        <p
+          class="m-4 white pt-5 font-light text-center"
+          style="font-size: 14px"
+        >
+          Continue trading on STACKPAL and get the best value on your assests.
+        </p>
+      </div>
+      <div class="pad-5 width-50 height-100 pad-t-pad-b">
+        <p
+          class="w-700 m-0 f-24 font-medium text-center pt-5"
+          style="font-size: 24px; line-height: 30px"
+        >
+          Welcome Back!
+        </p>
+        <p class="w-400 text-center mt-2 font-light">
+          Continue trading on STACKPAL
+        </p>
+        <form>
+          <div class="mt-5 d-flex ml-15perc">
+            <div class="input-icn">
+              <img
+                class="m-2 mt-4 ml-4"
+                style="max-height: 24px"
+                src="./assets/images/envelope.svg"
+              />
             </div>
-            <div class="pad-5 width-50 height-100 pad-t-pad-b">
-                <p class="w-700 m-0 f-24 text-center pt-5">Welcome Back!</p>
-                <p class="w-400 text-center">Continue trading on STACKPAL</p>
-                <form>
-                    <div class="mt-5 d-flex ml-15perc">
-                        <div class="input-icn">
-                            <img class="m-2" height="30" src="./assets/images/mail-icn.png"/>
-                        </div>
-                        <input placeholder="Email" type="text" class="w-70"/>
-                    </div>
-                    <div class="mt-4 d-flex ml-15perc">
-                        <div class="input-icn">
-                            <img class="m-2" height="30" src="./assets/images/pad-lock-icn.png"/>
-                        </div>
-                        <input placeholder="Password" type="password" class="w-70"/>
-                    </div>
-                    <div class="mt-3 d-flex justify-content-between w-70 ml-15perc">
-                        <label><input type="checkbox" id="checkBox" class="txt-purple" name="checkbox" value="remember"> Remember Me</label>
-                        <p class="pointer txt-purple">Forgot Password?</p>
-                    </div>
-                    <button class="mt-3 w-70 ml-15perc submit-btn">Submit</button>
-                </form>
-
-                <div class="mt-5 ml-15perc w-70 d-flex signin-google-btn">
-                    <div class="google-icn">
-                        <img class="mt-3 ml-3" height="20" src="./assets/images/google-icn.png"/>
-                    </div>
-                    <button class="google-btn ml">Login with Google</button>
-                </div>
-                <div class="w-100 bottom-section">
-                    <p class="ml-15perc txt-ash">New to Crypto? <a class="txt-purple pointer" href="register.html">Sign up here</a></p>
-                </div>
+            <input
+              placeholder="Email"
+              type="text"
+              style="padding: 22px 5px; color: #000"
+              class="w-70"
+            />
+          </div>
+          <div class="mt-4 d-flex ml-15perc">
+            <div class="input-icn">
+              <img
+                class="m-2 mt-4 ml-4"
+                style="max-height: 24px"
+                src="./assets/images/padlock.svg"
+              />
             </div>
+            <input
+              placeholder="Password"
+              type="password"
+              style="padding: 22px 5px; color: #000"
+              class="w-70"
+            />
+          </div>
+          <div class="mt-4 d-flex justify-content-between w-70 ml-15perc">
+            <label
+              ><input
+                type="checkbox"
+                id="checkBox"
+                class="txt-purple"
+                name="checkbox"
+                value="remember"
+              />
+              Remember Me</label
+            >
+            <p class="pointer">
+              <a href="forgot-password.html" class="txt-purple"
+                >Forgot Password?</a
+              >
+            </p>
+          </div>
+          <button class="mt-3 w-70 ml-15perc submit-btn">Submit</button>
+        </form>
+
+        <!-- <div class="mt-5 ml-15perc w-70 d-flex signin-google-btn">
+          <div class="google-icn">
+            <img
+              class="mt-3 ml-3"
+              height="20"
+              src="./assets/images/google-icn.png"
+            />
+          </div>
+          <button class="google-btn ml">Login with Google</button>
+        </div> -->
+        <div class="w-100 bottom-section" style="margin-bottom: 100px">
+          <p class="ml-15perc txt-ash">
+            New to Crypto?
+            <a class="txt-purple pointer" href="register.html">Sign up here</a>
+          </p>
         </div>
-    </body>
+      </div>
+    </div>
+  </body>
 </html>

@@ -1,17 +1,28 @@
 .<!DOCTYPE html>
 <html>
     <head>
-        <title>Crypto</title>
+        <title>Crypto Without Border - STACKPAL</title>
+        <link rel="icon" href="../assets/images/favicon.jpg" />
         <link rel="stylesheet" href="../css/dashboard-style.css" />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
-            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
-            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
-    </head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+          crossorigin="anonymous"
+        />
+        <link rel="icon" href="../assets/images/" sizes="192x192" />
+        <script
+          src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+          crossorigin="anonymous"
+        ></script>
+      </head>
     <body> 
         <div class="main-content">
             <nav class="sidenav nav-sidebar">
@@ -93,13 +104,13 @@
                                 <div>
                                     <div class="align-self-center d-flex" role="button" id="dropdownMenuLinkApp" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <img src="../assets/images/notification btn.png" height="20" class="pointer mt-2"/> &nbsp; &nbsp;
-                                        <img src="../assets/images/Face.png" height="20" class="pointer mt-2"/> &nbsp; &nbsp; 
-                                        <h4 class="pointer name-text mt-2" style="color: #6F6C99;">
+                                        <img src="../assets/images/staff4.png" height="20" class="pointer mt-2"/> &nbsp; &nbsp; 
+                                        <h4 class="pointer name-text mt-2 font-light" style="color: #6F6C99;">
                                             Angie Kem <img src="../assets/images/Down Arrow.jpg" height="7" width="10"/>
                                         </h4> &nbsp;
                                     </div>
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLinkApp">
-                                        <p class="pointer font-bold mb-0 text-center">
+                                        <p class="pointer font-light mb-0 text-center">
                                             <img src="../assets/images/Log_Out.jpg"/> Log Out
                                         </p>
                                     </div>
@@ -110,9 +121,9 @@
                     </div>
                 </nav>
                 <div class="page-content">
-                    <p class="font-bold">Declined Transactions</p>
+                    <p class="font-light">Declined Transactions</p>
                     <div class="mb-3">
-                        <a class="bk-btn pointer font-bold" href="transactions.html"> <img src="../assets/images/Caret_Circle_Left.jpg" height="20"/> Back</a>
+                        <a class="font-light bk-btn pointer font-bold" href="transactions.html"> <img src="../assets/images/Caret_Circle_Left.jpg" height="20"/> Back</a>
                     </div>
                    
                     <div class="user-main-content">
@@ -123,11 +134,11 @@
                                         <div class="d-flex" style="height: 35px;">
                                             <div class="d-flex">
                                                 <input class="customer-input-field" type="text"/>
-                                                <button class="transfer-btn-small" style="width: 100px; margin-left: -10px;">Search</button>
+                                                <button class="font-light transfer-btn-small" style="width: 100px; margin-left: -10px;">Search</button>
                                             </div>
                                             &nbsp; &nbsp;
                                             <div class="">
-                                                <button class="transfer-btn-small" style="width: 100px; height: 35px;">
+                                                <button class="font-light transfer-btn-small" style="width: 100px; height: 35px;">
                                                     Filter &nbsp; <img src="../assets/images/white-filter.png" height="15"/>
                                                 </button>
                                             </div>
@@ -137,129 +148,129 @@
                                         <table class="table table-borderless" style="background-color: #F8F7FF; color: black;">
                                             <thead>
                                               <tr class="has-bottom-border">
-                                                <th><span class="color-black">User Email</span></th>
-                                                <th class="color-black" style="text-align: start;"><span>Amount(Naira)</span></th>
-                                                <th class="color-black" style="text-align: start;"><span>Status</span></th>
-                                                <th class="color-black" style="text-align: start;"><span>Date Flagged</span></th>
-                                                <th class="color-black" style="text-align: start;"><span>Flagging Agent</span></th>
-                                                <th class="color-black" style="text-align: start;"><span>Unflagging Agent</span></th>
-                                                <th class="color-black" style="text-align: start;"><span>Date</span></th>
-                                                <th class="color-black" style="text-align: end;"><span>Action</span></th>
+                                                <th><span class="font-light color-black">User Email</span></th>
+                                                <th class="color-black" style="text-align: start;"><span class="font-light">Amount(Naira)</span></th>
+                                                <th class="color-black" style="text-align: start;"><span class="font-light">Status</span></th>
+                                                <th class="color-black" style="text-align: start;"><span class="font-light">Date Flagged</span></th>
+                                                <th class="color-black" style="text-align: start;"><span class="font-light">Flagging Agent</span></th>
+                                                <th class="color-black" style="text-align: start;"><span class="font-light">Unflagging Agent</span></th>
+                                                <th class="color-black" style="text-align: start;"><span class="font-light">Date</span></th>
+                                                <th class="color-black" style="text-align: end;"><span class="font-light">Action</span></th>
                                               </tr>
                                             </thead>
                                             <tbody>
                                                 <tr class="has-bottom-border">
                                                     <td class="item-useremail-5">
-                                                        <p class="color-grey">angiedesign@mail.com</p>
+                                                        <p class="color-grey font-light">angiedesign@mail.com</p>
                                                     </td>
                                                     <td class="item-amount-5" style="text-align: start;">
-                                                        <p class="color-grey">7,900</p>
+                                                        <p class="color-grey font-light">7,900</p>
                                                     </td>
                                                     <td class="item-status-5" style="text-align: start;">
                                                         <p style="color: #E9001C;">Declined</p>
                                                     </td>
                                                     <td class="item-dateflag-5" style="text-align: start;">
-                                                        <p class="color-grey">Apr 15th 2022 11:14am</p>
+                                                        <p class="color-grey font-light">Apr 15th 2022 11:14am</p>
                                                     </td>
                                                     <td class="item-flagger-5" style="text-align: start;">
-                                                        <p class="color-grey">Adebayo</p>
+                                                        <p class="color-grey font-light">Adebayo</p>
                                                     </td>
                                                     <td class="item-unflagger-5" style="text-align: start;">
-                                                        <p class="color-grey">David</p>
+                                                        <p class="color-grey font-light">David</p>
                                                     </td>
                                                     <td class="item-date-unflag-5" style="text-align: end;">
-                                                        <p class="color-grey">Apr 17th 2022 10:00pm</p>
+                                                        <p class="color-grey font-light">Apr 17th 2022 10:00pm</p>
                                                     </td>
-                                                    <td class="item-action-5" class="color-grey" style="text-align: start;">
+                                                    <td class="item-action-5" class="color-grey font-light" style="text-align: start;">
                                                         <a href="view-single-flagged-transaction.html">
-                                                            <button class="transfer-btn-small" style="width: 50px;">View</button>
+                                                            <button class="font-light transfer-btn-small" style="width: 50px;">View</button>
                                                         </a>
                                                     </td>
                                                   </tr>
 
                                                   <tr class="has-bottom-border">
                                                     <td class="item-useremail-5">
-                                                        <p class="color-grey">angiedesign@mail.com</p>
+                                                        <p class="color-grey font-light">angiedesign@mail.com</p>
                                                     </td>
                                                     <td class="item-amount-5" style="text-align: start;">
-                                                        <p class="color-grey">7,900</p>
+                                                        <p class="color-grey font-light">7,900</p>
                                                     </td>
                                                     <td class="item-status-5" style="text-align: start;">
                                                         <p style="color: #E9001C;">Declined</p>
                                                     </td>
                                                     <td class="item-dateflag-5" style="text-align: start;">
-                                                        <p class="color-grey">Apr 15th 2022 11:14am</p>
+                                                        <p class="color-grey font-light">Apr 15th 2022 11:14am</p>
                                                     </td>
                                                     <td class="item-flagger-5" style="text-align: start;">
-                                                        <p class="color-grey">Adebayo</p>
+                                                        <p class="color-grey font-light">Adebayo</p>
                                                     </td>
                                                     <td class="item-unflagger-5" style="text-align: start;">
-                                                        <p class="color-grey">David</p>
+                                                        <p class="color-grey font-light">David</p>
                                                     </td>
                                                     <td class="item-date-unflag-5" style="text-align: end;">
-                                                        <p class="color-grey">Apr 17th 2022 10:00pm</p>
+                                                        <p class="color-grey font-light">Apr 17th 2022 10:00pm</p>
                                                     </td>
-                                                    <td class="item-action-5" class="color-grey" style="text-align: start;">
+                                                    <td class="item-action-5" class="color-grey font-light" style="text-align: start;">
                                                         <a href="view-single-flagged-transaction.html">
-                                                            <button class="transfer-btn-small" style="width: 50px;">View</button>
+                                                            <button class="font-light transfer-btn-small" style="width: 50px;">View</button>
                                                         </a>
                                                     </td>
                                                   </tr>
 
                                                   <tr class="has-bottom-border">
                                                     <td class="item-useremail-5">
-                                                        <p class="color-grey">angiedesign@mail.com</p>
+                                                        <p class="color-grey font-light">angiedesign@mail.com</p>
                                                     </td>
                                                     <td class="item-amount-5" style="text-align: start;">
-                                                        <p class="color-grey">7,900</p>
+                                                        <p class="color-grey font-light">7,900</p>
                                                     </td>
                                                     <td class="item-status-5" style="text-align: start;">
                                                         <p style="color: #E9001C;">Declined</p>
                                                     </td>
                                                     <td class="item-dateflag-5" style="text-align: start;">
-                                                        <p class="color-grey">Apr 15th 2022 11:14am</p>
+                                                        <p class="color-grey font-light">Apr 15th 2022 11:14am</p>
                                                     </td>
                                                     <td class="item-flagger-5" style="text-align: start;">
-                                                        <p class="color-grey">Adebayo</p>
+                                                        <p class="color-grey font-light">Adebayo</p>
                                                     </td>
                                                     <td class="item-unflagger-5" style="text-align: start;">
-                                                        <p class="color-grey">David</p>
+                                                        <p class="color-grey font-light">David</p>
                                                     </td>
                                                     <td class="item-date-unflag-5" style="text-align: end;">
-                                                        <p class="color-grey">Apr 17th 2022 10:00pm</p>
+                                                        <p class="color-grey font-light">Apr 17th 2022 10:00pm</p>
                                                     </td>
-                                                    <td class="item-action-5" class="color-grey" style="text-align: start;">
+                                                    <td class="item-action-5" class="color-grey font-light" style="text-align: start;">
                                                         <a href="view-single-flagged-transaction.html">
-                                                            <button class="transfer-btn-small" style="width: 50px;">View</button>
+                                                            <button class="font-light transfer-btn-small" style="width: 50px;">View</button>
                                                         </a>
                                                     </td>
                                                   </tr>
 
                                                   <tr class="has-bottom-border">
                                                     <td class="item-useremail-5">
-                                                        <p class="color-grey">angiedesign@mail.com</p>
+                                                        <p class="color-grey font-light">angiedesign@mail.com</p>
                                                     </td>
                                                     <td class="item-amount-5" style="text-align: start;">
-                                                        <p class="color-grey">7,900</p>
+                                                        <p class="color-grey font-light">7,900</p>
                                                     </td>
                                                     <td class="item-status-5" style="text-align: start;">
                                                         <p style="color: #E9001C;">Declined</p>
                                                     </td>
                                                     <td class="item-dateflag-5" style="text-align: start;">
-                                                        <p class="color-grey">Apr 15th 2022 11:14am</p>
+                                                        <p class="color-grey font-light">Apr 15th 2022 11:14am</p>
                                                     </td>
                                                     <td class="item-flagger-5" style="text-align: start;">
-                                                        <p class="color-grey">Adebayo</p>
+                                                        <p class="color-grey font-light">Adebayo</p>
                                                     </td>
                                                     <td class="item-unflagger-5" style="text-align: start;">
-                                                        <p class="color-grey">David</p>
+                                                        <p class="color-grey font-light">David</p>
                                                     </td>
                                                     <td class="item-date-unflag-5" style="text-align: end;">
-                                                        <p class="color-grey">Apr 17th 2022 10:00pm</p>
+                                                        <p class="color-grey font-light">Apr 17th 2022 10:00pm</p>
                                                     </td>
-                                                    <td class="item-action-5" class="color-grey" style="text-align: start;">
+                                                    <td class="item-action-5" class="color-grey font-light" style="text-align: start;">
                                                         <a href="view-single-flagged-transaction.html">
-                                                            <button class="transfer-btn-small" style="width: 50px;">View</button>
+                                                            <button class="font-light transfer-btn-small" style="width: 50px;">View</button>
                                                         </a>
                                                     </td>
                                                   </tr>
